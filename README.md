@@ -29,7 +29,7 @@ flowchart LR
     S --> T[Individual scores + averages]
 ```
 
-**Status:** three-video live diagnostic completed: 32 descriptions and 32 scores, both models and four conditions. The full 303-video three-repeat benchmark is not complete. The Weizmann GT1 batch workflow has been initiated with a separate eight-request technical pilot before the main three-repeat stage; see the time-stamped [batch status snapshot](validation/BATCH_STATUS.json). No API calls are made by the default workflow. Generation is currently validated on Windows/CUDA; two cold-generated videos match all four existing conditions. This is not a 303-video cold verification or a fresh-machine validation.
+**Status:** three-video live diagnostic completed: 32 descriptions and 32 scores, both models and four conditions. The full 303-video three-repeat benchmark is not complete. The execution routes have been separated: GPT uses independent Codex sessions authenticated with the author's ChatGPT subscription, while Claude retains the API Batch route. Claude Weizmann GT1 (1,116 descriptions) has been collected; the full GPT subscription plan contains 4,716 descriptions. These are different execution environments, not two matched API backends. See the [subscription workflow](docs/SUBSCRIPTION_EXECUTION.md); the earlier [batch snapshot](validation/BATCH_STATUS.json) is historical. No API calls are made by the default workflow. Generation is currently validated on Windows/CUDA; two cold-generated videos match all four existing conditions. This is not a 303-video cold verification or a fresh-machine validation.
 
 ## Reproduce the workflow
 
@@ -242,10 +242,14 @@ The program reserves counted input plus a margin and maximum output before gener
 
 See [validation records](validation/STATUS.json). The new directory-based generator was tested cold on Weizmann run and UT push videos; all four conditions matched the existing inputs (48 appearances, 27 unique PNGs). Offline tests exercise inference → per-video records → GT-only scoring → CSV/averages, hash failures, budgets, repeats and resume, without real API traffic.
 
-The [live diagnostic record](validation/LIVE_SMOKE.json) covers Weizmann run, UT push and KISA parking: 32 schema-valid descriptions and 32 separate GPT-judge scores, with $0.500936 normal diagnostic cost. It contains observed interpretation errors and is not a quality pass or held-out evaluation. Sixteen offline tests pass, including batch collection and budget reservations as well as exact-byte transport, duplicate order, JSON parsing, budgets, resume and score-to-answer integrity. Metrics export was also checked on all 303 frozen input manifests and the 32 diagnostic answer/score pairs.
+The [live diagnostic record](validation/LIVE_SMOKE.json) covers Weizmann run, UT push and KISA parking: 32 schema-valid descriptions and 32 separate GPT-judge scores, with $0.500936 normal diagnostic cost. It contains observed interpretation errors and is not a quality pass or held-out evaluation. Twenty-one offline tests pass, including batch collection and budget reservations as well as exact-byte transport, duplicate order, JSON parsing, budgets, resume and score-to-answer integrity. Metrics export was also checked on all 303 frozen input manifests and the 32 diagnostic answer/score pairs.
 
 This package has **not** completed a fresh installation on another PC, a 303-video cold run, the full three-repeat API experiment, or large-input live transport validation. Earlier project verification established 303 selection replays and three cold-generated examples; those are different verification scopes. The final experiment protocol, author-code license, and exact external dataset/weight acquisition arrangements remain to be finalized. Publication of source files does not establish completion of those tasks.
 
 ## License and attribution
 
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the preserved Ultralytics AGPL-3.0 license and external asset terms. No blanket license is granted over datasets, weights or GT. A license for the authors' new code has not yet been selected; no final paper citation or DOI is claimed.
+
+## GPT through Codex subscription sessions
+
+The optional [subscription workflow](docs/SUBSCRIPTION_EXECUTION.md) runs one fresh `codex exec` session per video/task/condition/repeat, preserving the frozen input order and duplicate appearances. Claude continues through the separate API route. GPT subscription results, CLI usage and unknown dollar costs remain separate from paid API results.
