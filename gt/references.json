@@ -1,0 +1,1974 @@
+{
+  "status": "model_assisted_not_all_human_verified",
+  "source_sha256": {
+    "GT1": "f124cb00e1e647875d464b752effa93f49525114c3e37de9aa434688d436f1df",
+    "GT2": "f9848de430d84be927b3322256b182f4a40e7404dc6730f58e58c1bff4c9a489"
+  },
+  "items": [
+    {
+      "video_id": "v7450b52ed87e",
+      "task": "GT1",
+      "reference": "A person enters a residential street from the lower left and approaches a stand on the grass. A flame appears at the stand while the person is beside it, and the person then leaves. Flames and smoke remain for a while but are no longer visible by the end."
+    },
+    {
+      "video_id": "v294b648689b1",
+      "task": "GT1",
+      "reference": "A person enters a residential street from the lower left and approaches a stand on the grass. A flame appears at the stand while the person is beside it, and the person then leaves. Flames and smoke remain for a while but are no longer visible by the end."
+    },
+    {
+      "video_id": "v96c424c797db",
+      "task": "GT1",
+      "reference": "A person enters a residential street from the lower left and approaches a stand on the grass. A flame appears at the stand while the person is beside it, and the person then leaves. Flames and smoke remain for a while but are no longer visible by the end."
+    },
+    {
+      "video_id": "v2a017dbea4d8",
+      "task": "GT1",
+      "reference": "A person enters a residential street from the lower left and approaches a stand on the grass. A flame appears at the stand while the person is beside it, and the person then leaves. Flames and smoke continue after the person leaves, with a small flame still visible near the end."
+    },
+    {
+      "video_id": "v16bf55d049a3",
+      "task": "GT1",
+      "reference": "A person crosses a park court from the left and stops beside a small stand. A flame appears on the stand while the person is beside it, and the person then walks back out to the left. The flame subsequently disappears from view, leaving the stand with no person nearby."
+    },
+    {
+      "video_id": "v004a9bb742ef",
+      "task": "GT1",
+      "reference": "At night, a person enters a park from the lower left and stops near a pole. A bright flame appears at ground level beside the person, who then walks back out to the lower left. The fire becomes smaller and is no longer visible by the end."
+    },
+    {
+      "video_id": "v85e5b4c8bd43",
+      "task": "GT1",
+      "reference": "A person enters a parking lot and approaches a chair. A flame appears on the chair, and the person turns and leaves to the right. Flames and dark smoke rise from the chair but are no longer visible by the end; the chair remains."
+    },
+    {
+      "video_id": "v35255963514f",
+      "task": "GT1",
+      "reference": "A chair remains in a parking lot throughout the clip; no person approaches it and no fire is visible."
+    },
+    {
+      "video_id": "vaeb3c6576e0f",
+      "task": "GT1",
+      "reference": "At night, a person approaches a roadside stand, where a bright flame appears, and then leaves. The flames and smoke later disappear from view while the stand remains."
+    },
+    {
+      "video_id": "vcb945fab3d45",
+      "task": "GT1",
+      "reference": "A person enters a yard and approaches a small stand; a flame appears there before the person leaves. Flames and thick dark smoke rise, then disappear from view before the clip ends."
+    },
+    {
+      "video_id": "veb22bc81d41b",
+      "task": "GT1",
+      "reference": "Two people enter a park from the right; the person in white moves around near the gazebo and playground while the person in red waits beside the path. The person in red leaves toward the lower right first, followed by the person in white, leaving the park empty."
+    },
+    {
+      "video_id": "vb92238f0f5e0",
+      "task": "GT1",
+      "reference": "At night, a car enters the parking area from the far road and drives toward the camera and the lower right. It leaves through the right edge; no person appears and the previously parked minivan remains."
+    },
+    {
+      "video_id": "va7d17c5fbf5a",
+      "task": "GT1",
+      "reference": "Two people enter a parking lot and stand a short distance apart for a while. They turn back toward the camera and leave through the bottom of the frame, leaving no people in the lot."
+    },
+    {
+      "video_id": "vaa743a8900e2",
+      "task": "GT1",
+      "reference": "Two people enter a parking lot and stand a short distance apart for a while. They turn back toward the camera and leave through the bottom of the frame, leaving no people in the lot."
+    },
+    {
+      "video_id": "v7b49f2f59892",
+      "task": "GT1",
+      "reference": "Three people enter a parking lot one after another and remain standing apart for a while. They return toward the camera and leave the scene, leaving no people in the lot."
+    },
+    {
+      "video_id": "vab11347b8d2f",
+      "task": "GT1",
+      "reference": "Two people enter a parking lot and remain standing apart for a while. Near the end they start walking back toward the camera, but both are still visible when the clip ends."
+    },
+    {
+      "video_id": "vf6794a1e17ae",
+      "task": "GT1",
+      "reference": "Two people enter a paved roundabout and stop a short distance apart for a while. They turn back and leave toward the lower left, leaving no people in the roundabout."
+    },
+    {
+      "video_id": "v3b970d8bbfaa",
+      "task": "GT1",
+      "reference": "A person in a red top enters a lakeside park from the lower left and pauses on the path, turning to look in different directions. The person walks back the way they came and leaves through the lower left."
+    },
+    {
+      "video_id": "v67e172071c1d",
+      "task": "GT1",
+      "reference": "Three people enter a yard from the left and wait at separate positions, with two farther along the fence and one near the front. They subsequently walk back and leave to the left, leaving the yard empty."
+    },
+    {
+      "video_id": "v4d21679413ba",
+      "task": "GT1",
+      "reference": "Three people enter a yard from the left and wait at separate positions, with two farther along the fence and one near the front. They subsequently walk back and leave to the left, leaving the yard empty."
+    },
+    {
+      "video_id": "v0336ce934f4a",
+      "task": "GT1",
+      "reference": "A white car enters from the bottom of the frame and stops on the right side of the road. A person gets out of the car and leaves on foot. The car remains stopped after the person leaves."
+    },
+    {
+      "video_id": "vff6c81f49d82",
+      "task": "GT1",
+      "reference": "A white car enters from the bottom of the frame and stops on the right side of the road. A person gets out of the car and leaves on foot. The car remains stopped after the person leaves."
+    },
+    {
+      "video_id": "vbf467f99d68a",
+      "task": "GT1",
+      "reference": "A person already visible on the right sidewalk walks toward the camera and leaves through the right edge. A motorcycle remains parked by the roadside throughout the clip."
+    },
+    {
+      "video_id": "vb6c1c9348486",
+      "task": "GT1",
+      "reference": "A white car enters from the bottom of the frame and stops on the right side of the road. A person gets out of the car and leaves on foot. The car remains stopped after the person leaves."
+    },
+    {
+      "video_id": "vfa2bb59258a9",
+      "task": "GT1",
+      "reference": "A white car enters from the bottom of the frame and stops on the right side of the road. A person gets out of the car and leaves on foot. The car remains stopped after the person leaves."
+    },
+    {
+      "video_id": "v2e58331adb34",
+      "task": "GT1",
+      "reference": "A dark car remains stationary at the left roadside throughout the clip, with no person approaching or leaving it."
+    },
+    {
+      "video_id": "vef98e529f345",
+      "task": "GT1",
+      "reference": "A small dark truck remains stationary at the left roadside throughout the clip, with no person approaching or leaving it."
+    },
+    {
+      "video_id": "v32ca268d9c87",
+      "task": "GT1",
+      "reference": "A small dark truck remains stationary at the left roadside throughout the clip, with no person approaching or leaving it."
+    },
+    {
+      "video_id": "v45b939f669e1",
+      "task": "GT1",
+      "reference": "A truck is already parked at the left roadside when a person enters from the left and walks toward it. The person disappears from view at the driver side, and the truck remains stationary."
+    },
+    {
+      "video_id": "vaa53878d2157",
+      "task": "GT1",
+      "reference": "A truck remains parked at the left roadside for most of the clip. Near the end a person enters from the left and approaches it, but has not reached the truck when the clip ends."
+    },
+    {
+      "video_id": "v12eb655a8566",
+      "task": "GT1",
+      "reference": "Two people enter a yard and fight while moving across the lawn and walkway, then stop and leave together toward the camera. No people remain in the yard."
+    },
+    {
+      "video_id": "vc587aab5fdd0",
+      "task": "GT1",
+      "reference": "Two people enter a residential street and fight with each other near the grass verge. They then stop fighting and leave together."
+    },
+    {
+      "video_id": "v1da24b4b8fc5",
+      "task": "GT1",
+      "reference": "Three people enter a street and become involved in a fight near the grass verge, with two people fighting against one. After the fight ends, all three leave together."
+    },
+    {
+      "video_id": "v019d0525a83c",
+      "task": "GT1",
+      "reference": "Three people enter a street, where the people in white and black attack the person in maroon near the grass verge. After the fight, all three leave together toward the lower left."
+    },
+    {
+      "video_id": "v6a1e865d54a6",
+      "task": "GT1",
+      "reference": "Two people enter a street and fight as they move up the road, then stop and leave together toward the camera."
+    },
+    {
+      "video_id": "vfa9da044aa22",
+      "task": "GT1",
+      "reference": "Two people fight beside a grass verge, and the person in white kicks the person in maroon to the ground. The fallen person gets up and the fight continues with another fall before both stop and leave together."
+    },
+    {
+      "video_id": "v1e557f97b2f1",
+      "task": "GT1",
+      "reference": "Two people enter a park court and fight, repeatedly separating and coming together again, before stopping and leaving together."
+    },
+    {
+      "video_id": "vfd751d224eac",
+      "task": "GT1",
+      "reference": "Two people enter a lakeside park and fight near the grass steps, then stop and leave together. No people remain in the area."
+    },
+    {
+      "video_id": "vc3a16e537ae8",
+      "task": "GT1",
+      "reference": "Three people enter a yard and scuffle, with the person in white appearing to be the main target of the other two. They eventually stop and leave beside the building."
+    },
+    {
+      "video_id": "v5e5c9f7a5938",
+      "task": "GT1",
+      "reference": "Two people enter beside a building and scuffle at its corner, then stop and walk away together along the wall."
+    },
+    {
+      "video_id": "vea2bd90a02f9",
+      "task": "GT1",
+      "reference": "Two people enter a residential street and walk away from the camera before collapsing onto the road at almost the same time. Both remain lying motionless on the road at the end."
+    },
+    {
+      "video_id": "v4ee081b28ba8",
+      "task": "GT1",
+      "reference": "A person walks along a street and collapses onto the road, remaining face-down without visible movement at the end."
+    },
+    {
+      "video_id": "v31ae1bc1c241",
+      "task": "GT1",
+      "reference": "Three people enter a parking lot and collapse one after another. All three remain lying still on the ground at the end."
+    },
+    {
+      "video_id": "vb550b9b78959",
+      "task": "GT1",
+      "reference": "Three people enter a road from the lower right, walk away from the camera and collapse one after another. All three remain lying still on the road at the end."
+    },
+    {
+      "video_id": "vb81e6cba6bbf",
+      "task": "GT1",
+      "reference": "Two people enter a road from the lower right, walk away from the camera and collapse at almost the same time. Both remain lying still on the road at the end."
+    },
+    {
+      "video_id": "v10df360f4568",
+      "task": "GT1",
+      "reference": "Two people enter a road from the lower right, walk away from the camera and collapse at almost the same time. Both remain lying still on the road at the end."
+    },
+    {
+      "video_id": "v02586ea32baa",
+      "task": "GT1",
+      "reference": "Three people enter from the right and walk left across a seaside lawn before collapsing at almost the same time. All three remain lying face-down and still at the end."
+    },
+    {
+      "video_id": "v549d9c8e6b01",
+      "task": "GT1",
+      "reference": "At night, two people walk left along a waterfront promenade and collapse at almost the same time. Both remain lying still at the end."
+    },
+    {
+      "video_id": "vbefe1cae68fe",
+      "task": "GT1",
+      "reference": "Two people walk left through a lakeside park; the person in a yellow coat collapses first, followed shortly by the person in a dark coat. Both remain lying still at the end."
+    },
+    {
+      "video_id": "v1691802a1d3a",
+      "task": "GT1",
+      "reference": "Three people enter a lakeside park from the right, walk left and collapse in quick succession. All three remain lying still at the end."
+    },
+    {
+      "video_id": "v8bb5ed95857c",
+      "task": "GT1",
+      "reference": "A person enters a yard carrying a dark bag and puts it down on the walkway beside the building. The person turns back and leaves empty-handed, while the bag remains on the walkway."
+    },
+    {
+      "video_id": "ve6e1c9662016",
+      "task": "GT1",
+      "reference": "A person walks away from the camera along a street, removes a backpack and places it at the edge of the right sidewalk. The person returns toward the camera and leaves without the backpack, which remains there."
+    },
+    {
+      "video_id": "v1cde46885ea4",
+      "task": "GT1",
+      "reference": "A person carries a red container along a roadside grass strip and puts it down on the grass. The person turns back and leaves empty-handed, while the container remains."
+    },
+    {
+      "video_id": "vdf9b5088fa6a",
+      "task": "GT1",
+      "reference": "No person enters the parking lot and no object is left behind during the clip; the previously parked minivan remains in place."
+    },
+    {
+      "video_id": "v3f0690c4955f",
+      "task": "GT1",
+      "reference": "A person enters a parking lot carrying a red container and puts it down in a parking bay. The person walks back out empty-handed, leaving the container in the bay."
+    },
+    {
+      "video_id": "vc5754ac5f4c1",
+      "task": "GT1",
+      "reference": "A person carries a red container along the right curb of a road and puts it down beside the curb. The person leaves to the right empty-handed, while the container remains."
+    },
+    {
+      "video_id": "v891438e2f275",
+      "task": "GT1",
+      "reference": "A person enters a lakeside park carrying a pink bag and puts it down beside stone steps. The person returns to the right empty-handed and leaves the bag behind."
+    },
+    {
+      "video_id": "v0393117f41e0",
+      "task": "GT1",
+      "reference": "At night, a person carries a dark bag onto a waterfront path and puts it down at the path edge. The person walks back out to the right empty-handed, leaving the bag behind."
+    },
+    {
+      "video_id": "v00b9e2366c1c",
+      "task": "GT1",
+      "reference": "A person in red carries a dark bag onto a grass terrace in a lakeside park and puts it down. The person walks back out to the right empty-handed, leaving the bag on the terrace."
+    },
+    {
+      "video_id": "v55e7d04c8150",
+      "task": "GT1",
+      "reference": "A person carrying a pink bag walks beside a building and places the bag near a drain grate. The person turns back and leaves to the right empty-handed, while the bag remains."
+    },
+    {
+      "video_id": "v59694f25acff",
+      "task": "GT1",
+      "reference": "A motorcycle approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v622757b03cba",
+      "task": "GT1",
+      "reference": "A white van approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "vc7fe3a008964",
+      "task": "GT1",
+      "reference": "A scooter approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v73720d7249ee",
+      "task": "GT1",
+      "reference": "A motorcycle approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v3fcccf2e7d46",
+      "task": "GT1",
+      "reference": "A scooter approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v4c10199dda25",
+      "task": "GT1",
+      "reference": "A dark car approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v004f63b8879b",
+      "task": "GT1",
+      "reference": "A small dark truck approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v2dd257be6113",
+      "task": "GT1",
+      "reference": "A delivery motorcycle approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "vb1187cc8434c",
+      "task": "GT1",
+      "reference": "A small dark truck approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "v36cc9e6a7f55",
+      "task": "GT1",
+      "reference": "A delivery motorcycle approaches along the road and crosses the centre line from the image-left lanes to the image-right lanes. It continues toward the camera and exits at the lower right, leaving the road empty."
+    },
+    {
+      "video_id": "vf694ea6f6e3b",
+      "task": "GT1",
+      "reference": "At night, a motorcycle with one rider enters from the far side of an open paved area and crosses toward the lower right. It exits through the right edge, leaving the area empty."
+    },
+    {
+      "video_id": "v6ce089184f9e",
+      "task": "GT1",
+      "reference": "A person rides a self-balancing board from the upper left across an open paved area toward the camera and the right. The rider leaves through the right side, leaving the area empty."
+    },
+    {
+      "video_id": "v0b4f2ee17ff2",
+      "task": "GT1",
+      "reference": "A person rides a self-balancing board from the upper left across an open paved area toward the camera and the right. The rider leaves through the right side, leaving the area empty."
+    },
+    {
+      "video_id": "vfda252ae7cca",
+      "task": "GT1",
+      "reference": "A person in a yellow top rides a handlebar-equipped personal transporter from the upper left across an open paved area to the right. The rider leaves the scene, leaving the area empty."
+    },
+    {
+      "video_id": "v38f6624a1228",
+      "task": "GT1",
+      "reference": "At night, two people ride together on one electric kick scooter from the upper left across a paved area to the right. They leave beside the railing on the right, leaving the area empty."
+    },
+    {
+      "video_id": "v07bb91769c6d",
+      "task": "GT1",
+      "reference": "A person rides a self-balancing board from the upper left across an open paved area toward the camera and the right. The rider leaves through the right side, leaving the area empty."
+    },
+    {
+      "video_id": "vaea058e099fa",
+      "task": "GT1",
+      "reference": "A delivery scooter approaches through a park, follows the curved path on the left of the plaza and comes toward the camera. It exits at the lower left, leaving the plaza empty."
+    },
+    {
+      "video_id": "v0bbb951d0772",
+      "task": "GT1",
+      "reference": "A cyclist approaches from behind the playground and follows a curved park path toward the camera. The cyclist exits through the bottom of the frame, leaving the plaza empty."
+    },
+    {
+      "video_id": "v9035265296d3",
+      "task": "GT1",
+      "reference": "A cyclist approaches from behind the playground and follows a curved park path toward the camera. The cyclist exits through the bottom of the frame, leaving the plaza empty."
+    },
+    {
+      "video_id": "v7000c16b3119",
+      "task": "GT1",
+      "reference": "A delivery scooter approaches from behind a playground and travels toward the camera along the central path. It exits at the lower right, leaving the plaza empty."
+    },
+    {
+      "video_id": "v22dc300127b7",
+      "task": "GT1",
+      "reference": "A person enters a yard through the rear pedestrian gate and walks along the path to the house door. The person goes through the door and disappears inside, leaving no one visible in the yard."
+    },
+    {
+      "video_id": "v3d62edaf2bae",
+      "task": "GT1",
+      "reference": "A person enters a yard through the rear pedestrian gate and walks along the path to the house door. The person goes through the door and disappears inside, leaving no one visible in the yard."
+    },
+    {
+      "video_id": "v44927b97d130",
+      "task": "GT1",
+      "reference": "A person enters a yard through the rear pedestrian gate and walks along the path to the house door. The person goes through the door and disappears inside, leaving no one visible in the yard."
+    },
+    {
+      "video_id": "ve1023f60ca5b",
+      "task": "GT1",
+      "reference": "A person enters from the lower left of a residential street and walks to a fence beside a house. The person climbs over the fence into the property and does not reappear before the clip ends."
+    },
+    {
+      "video_id": "v0bd870cba26a",
+      "task": "GT1",
+      "reference": "After another pedestrian passes, two people approach a roadside fence from the lower left. They climb over it one after another into the property, with the person in white going first; neither remains visible outside."
+    },
+    {
+      "video_id": "v9744500c5a7c",
+      "task": "GT1",
+      "reference": "Three people enter a residential street and approach the same fence beside a house. They climb over the fence one after another and disappear from the street side."
+    },
+    {
+      "video_id": "v958307953faa",
+      "task": "GT1",
+      "reference": "A person crosses a lawn and climbs over a low wall onto the beach side. The person walks right along the beach and disappears behind the building."
+    },
+    {
+      "video_id": "va7e98e2a708f",
+      "task": "GT1",
+      "reference": "Three people cross a lawn and climb over a low wall onto the beach one after another. They walk right along the beach and disappear behind the building."
+    },
+    {
+      "video_id": "v83b82763865a",
+      "task": "GT1",
+      "reference": "A person climbs over the back fence into a yard and walks past a small building toward the camera. The person leaves at the lower right beside a pillar, leaving the yard empty."
+    },
+    {
+      "video_id": "v41696e99cef3",
+      "task": "GT1",
+      "reference": "A person appears near a rear fence and walks along it past a small building. The person approaches the camera beside the larger building and leaves at the lower right."
+    },
+    {
+      "video_id": "v7ad9e0ee0bdc",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then move apart."
+    },
+    {
+      "video_id": "v68bde973961b",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "vcdab10cdbee1",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left."
+    },
+    {
+      "video_id": "v3225baca4561",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v4773e9af0277",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left."
+    },
+    {
+      "video_id": "v81e9cbeaf312",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person retreats and leaves the frame to the left."
+    },
+    {
+      "video_id": "v3d81283c9561",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then move apart."
+    },
+    {
+      "video_id": "v3dd5c1af8ab9",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they hug, then move apart."
+    },
+    {
+      "video_id": "vc8e6bd011ebb",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, and the other person turns and walks away."
+    },
+    {
+      "video_id": "v531a92fed0b1",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v96b4e3f1b1de",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person turns and walks away."
+    },
+    {
+      "video_id": "v442f191ad979",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person retreats and leaves the frame to the right."
+    },
+    {
+      "video_id": "vd7b95ff38e74",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then move apart."
+    },
+    {
+      "video_id": "va607a28abdfb",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they hug, then move apart."
+    },
+    {
+      "video_id": "v2e58f476237c",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v6a0982f3430e",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "v2799dda8e74b",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "veddcdaf64d6d",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v0162d30a5092",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "vc196d95b3040",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they hug, then move apart."
+    },
+    {
+      "video_id": "v0ab9369ade40",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away; they remain standing apart."
+    },
+    {
+      "video_id": "v9494aa54e7c9",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v55c6749f1295",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, while the other person reacts without moving away; they remain standing apart."
+    },
+    {
+      "video_id": "vc3f9115356d7",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person retreats and leaves the frame to the left."
+    },
+    {
+      "video_id": "vc427bcf805e8",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then move apart."
+    },
+    {
+      "video_id": "v786abbf25464",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "v3f3470e7264d",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "vb58a96231fc1",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v83a0204b97d2",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v301ded809dab",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v65787c15b2c9",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then move apart."
+    },
+    {
+      "video_id": "vd898e8ded4a6",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they hug, then move apart."
+    },
+    {
+      "video_id": "vbe8d8bdb43e7",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away; they remain standing apart."
+    },
+    {
+      "video_id": "v9cff50ea98f3",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "ve76e77b83c78",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "va81edb6ad59c",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "vbb990c8c8b06",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "v0839308cd540",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, while the other person reacts without moving away; they remain standing apart."
+    },
+    {
+      "video_id": "v45738ccbeac6",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v110c9b063a8a",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v6993f236aee9",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v8a95028bfe87",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "v5cd4f974f46f",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "v5dd60ff49099",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away; they remain standing apart."
+    },
+    {
+      "video_id": "v7412bea0b3e8",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "vcc9ae60d9b7b",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v2d81475ee412",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v0cefa3b45833",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v063c96237054",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "v54b821d74016",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "vf885262181fd",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "vdd0d4137f984",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "vf3e5a78099ac",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v65aa7c599310",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v3be8701a99be",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "v7fb9aecc33cf",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "vac61c87fcd9f",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v9205d60a6eae",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "v2c79ffc3f845",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left."
+    },
+    {
+      "video_id": "v0070cd0e358b",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "ve0d18efdd36e",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "vb7b050147baf",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they hug, then move apart."
+    },
+    {
+      "video_id": "v1daf43e75118",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v3cb7688dc3d8",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "v3dce454afda2",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person retreats and leaves the frame to the left."
+    },
+    {
+      "video_id": "v20715cdf0e77",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v8846a7efa757",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "vc6a43ca2cd26",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they hug, then move apart."
+    },
+    {
+      "video_id": "v7ed104809ac7",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v349ae9e2fc54",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v0aa157b148b5",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v49529a38c07d",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v49901f446f7b",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then walk away in opposite directions."
+    },
+    {
+      "video_id": "v8f7165a03b8e",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "v426d731ba60b",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v53f08e34a823",
+      "task": "GT1",
+      "reference": "A person points to the left, then walks to the right."
+    },
+    {
+      "video_id": "v2f16ef43c99a",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v99122d230c2e",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v788dd740f5b2",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "vecf9319e451b",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they hug, then move apart."
+    },
+    {
+      "video_id": "vbc428fb886f6",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v935e212bc2a6",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "v56628e500623",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "veb9eecb51ff1",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v7272208781b7",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then move apart."
+    },
+    {
+      "video_id": "va7f7bb5de8e5",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they hug, then remain standing close to each other."
+    },
+    {
+      "video_id": "ve28de7364024",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v1563c90d02ea",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v33b577fca630",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v2200f675c578",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v784adb30ded6",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "vd7cc69df8054",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "va29c81c13eb8",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, while the other person reacts without moving away; they remain standing apart."
+    },
+    {
+      "video_id": "va068e1cf3540",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v18d84e0c6989",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person retreats to the tree and braces against it before walking nearby."
+    },
+    {
+      "video_id": "v40ac8d1fe5e5",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v78174c7c6568",
+      "task": "GT1",
+      "reference": "The person on the right approaches the person on the left, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "v8330e1871715",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "va16ee1533f08",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v8ac5cd4e1ae9",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "v6943dd77074a",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "vaa5712df9059",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v44e85b3e1e25",
+      "task": "GT1",
+      "reference": "Two people approach each other and shake hands, then walk away in opposite directions."
+    },
+    {
+      "video_id": "v3dbeed52b604",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "vfd7a2557a1a5",
+      "task": "GT1",
+      "reference": "The person on the right approaches and kicks toward the person on the left, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "vab601d55e749",
+      "task": "GT1",
+      "reference": "A person points to the left and remains in place afterward."
+    },
+    {
+      "video_id": "v15464371db4c",
+      "task": "GT1",
+      "reference": "The person on the right approaches and throws a punch toward the person on the left, and the other person retreats and leaves the frame to the left."
+    },
+    {
+      "video_id": "v5a36583d5f21",
+      "task": "GT1",
+      "reference": "The person on the right approaches and pushes the person on the left, and the other person retreats and leaves the frame to the left."
+    },
+    {
+      "video_id": "v70dc5dc80468",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "v2f17b813e211",
+      "task": "GT1",
+      "reference": "Two people approach each other and hug, then move apart."
+    },
+    {
+      "video_id": "v4d7e0505d99e",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "va46dde5e46ac",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v29193c37061e",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v091128c0a11e",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v67958c665c4c",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they shake hands, then move apart."
+    },
+    {
+      "video_id": "v905d0a5c228b",
+      "task": "GT1",
+      "reference": "The person on the left approaches the person on the right, and they hug, then move apart."
+    },
+    {
+      "video_id": "v28595d3b7c7f",
+      "task": "GT1",
+      "reference": "The person on the left approaches and kicks toward the person on the right, while the other person reacts without moving away."
+    },
+    {
+      "video_id": "v26e12e2eb45a",
+      "task": "GT1",
+      "reference": "A person points to the right and remains in place afterward."
+    },
+    {
+      "video_id": "v5426afb88382",
+      "task": "GT1",
+      "reference": "The person on the left approaches and throws a punch toward the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "vebf84cf26778",
+      "task": "GT1",
+      "reference": "The person on the left approaches and pushes the person on the right, and the other person moves backward in response."
+    },
+    {
+      "video_id": "v69e412fe6122",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "vadb4fd09b339",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "v1470ec79df06",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top moves in repeated two-footed jumps from left to right across the scene."
+    },
+    {
+      "video_id": "v7babca6de512",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "v7e28bba5b470",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top runs from right to left across the scene."
+    },
+    {
+      "video_id": "v4ecfa5e150ec",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top moves sideways from right to left across the scene."
+    },
+    {
+      "video_id": "v9e20a5e6961a",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top skips from right to left across the scene."
+    },
+    {
+      "video_id": "v7a503003cff1",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top walks from right to left across the scene."
+    },
+    {
+      "video_id": "v7644711c85a1",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "v5ee723813d6f",
+      "task": "GT1",
+      "reference": "A person wearing a dark blue-grey long-sleeved top stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "va92a5beeeca0",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "v08144c76b4cd",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "v223e68e193f4",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt moves in repeated two-footed jumps from right to left across the scene."
+    },
+    {
+      "video_id": "v02cbebf064a2",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "v4af6deb2dc0a",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt runs from right to left across the scene."
+    },
+    {
+      "video_id": "ve9d7bde145e6",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt moves sideways from right to left across the scene."
+    },
+    {
+      "video_id": "v154adbe1676a",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt skips from right to left across the scene."
+    },
+    {
+      "video_id": "va4b63926aa65",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt walks from right to left across the scene."
+    },
+    {
+      "video_id": "vb34a1a08b97a",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "ve9547ac4fad9",
+      "task": "GT1",
+      "reference": "A person wearing a light purple long-sleeved shirt stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "vd3342f241ef3",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "vb35e88283900",
+      "task": "GT1",
+      "reference": "A person wearing a blue long-sleeved sweater repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "v92f259a47347",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket moves in repeated two-footed jumps from left to right across the scene."
+    },
+    {
+      "video_id": "v64967d641595",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "v94670a6f062d",
+      "task": "GT1",
+      "reference": "A person wearing a blue long-sleeved sweater runs from right to left across the scene, then exits through the left edge."
+    },
+    {
+      "video_id": "v6d8a1e92872c",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket moves sideways from right to left across the scene."
+    },
+    {
+      "video_id": "v17d09df5d7dc",
+      "task": "GT1",
+      "reference": "A person wearing a blue long-sleeved sweater skips from right to left across the scene."
+    },
+    {
+      "video_id": "v8e40ef6e0c23",
+      "task": "GT1",
+      "reference": "A person wearing a blue long-sleeved sweater walks from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "v26e5ab90df5e",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "v57b202dbff2e",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "v8c7ac3c21ea4",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "vcac4b39deda7",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "va4580a53a789",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket moves in repeated two-footed jumps from right to left across the scene."
+    },
+    {
+      "video_id": "vcb05c877fb69",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "v7aa06eb6e9f4",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket runs from left to right across the scene."
+    },
+    {
+      "video_id": "vd9b49120ee84",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket moves sideways from left to right across the scene."
+    },
+    {
+      "video_id": "v85c1737fd5f0",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket skips from left to right across the scene."
+    },
+    {
+      "video_id": "v75db83ebbe5f",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket walks from left to right across the scene."
+    },
+    {
+      "video_id": "v3acb709c10b7",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "vda9ec4c716ca",
+      "task": "GT1",
+      "reference": "A person wearing a dark long-sleeved jacket stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "v825c8909ea38",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "v197327d7337e",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "vb302aa9fb450",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket moves in repeated two-footed jumps from right to left across the scene."
+    },
+    {
+      "video_id": "ve80ba29b30c0",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "vd17bd78876b9",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket runs from right to left across the scene."
+    },
+    {
+      "video_id": "v59d31fd5b397",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket moves sideways from left to right across the scene."
+    },
+    {
+      "video_id": "v943c0fcc95aa",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket skips from left to right across the scene."
+    },
+    {
+      "video_id": "vb4f12602f179",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket walks from right to left across the scene."
+    },
+    {
+      "video_id": "v71658a1b3a55",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "v8531dcfa689d",
+      "task": "GT1",
+      "reference": "A person wearing a blue denim jacket stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "v8d068cb68836",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "vfc04d37970a7",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "va4491915f067",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top moves in repeated two-footed jumps from right to left across the scene."
+    },
+    {
+      "video_id": "vf51143956d98",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "v9e66058c8b62",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top runs from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "v94aec3748f59",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top runs from right to left across the scene, then exits through the left edge."
+    },
+    {
+      "video_id": "v81b2f0d82ab8",
+      "task": "GT1",
+      "reference": "A person wearing a dark purple long-sleeved top moves sideways from left to right across the scene."
+    },
+    {
+      "video_id": "v3817c94d310e",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top skips from right to left across the scene, then exits through the left edge."
+    },
+    {
+      "video_id": "v7b2d01ae8bdb",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top skips from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "vae2de7c355ec",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top walks from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "v897cdede5ccc",
+      "task": "GT1",
+      "reference": "A person wearing an olive/khaki long-sleeved top walks from right to left across the scene, then exits through the left edge."
+    },
+    {
+      "video_id": "ve9e866711f09",
+      "task": "GT1",
+      "reference": "A person wearing a dark purple long-sleeved top stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "vda05689a4d51",
+      "task": "GT1",
+      "reference": "A person wearing a dark purple long-sleeved top stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "v1fc7e53e693f",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "v0454d77ad003",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "vc4d2ddd6cfc1",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt moves in repeated two-footed jumps from left to right across the scene."
+    },
+    {
+      "video_id": "v5e4352190be2",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "vcb8c621d519f",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt moves from right to left across the scene."
+    },
+    {
+      "video_id": "v54a72da8f07c",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt moves sideways from right to left across the scene."
+    },
+    {
+      "video_id": "ve951f6810256",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt skips from right to left across the scene."
+    },
+    {
+      "video_id": "v21471c875be2",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt walks from right to left across the scene."
+    },
+    {
+      "video_id": "vd536c78c326c",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "vcef85410d914",
+      "task": "GT1",
+      "reference": "A person wearing a dark grey patterned long-sleeved shirt stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "ve82bc43ee4c6",
+      "task": "GT1",
+      "reference": "A person wearing a dark brown long-sleeved jacket bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "vbb70da7a5862",
+      "task": "GT1",
+      "reference": "A person wearing a black hooded jacket repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "vd3d053f6e2d6",
+      "task": "GT1",
+      "reference": "A person wearing a dark brown long-sleeved jacket moves in repeated two-footed jumps from right to left across the scene."
+    },
+    {
+      "video_id": "v5b6d44eef7de",
+      "task": "GT1",
+      "reference": "A person wearing a dark brown long-sleeved jacket repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "vac67826d0f45",
+      "task": "GT1",
+      "reference": "A person wearing a black hooded jacket runs from right to left across the scene, then exits through the left edge."
+    },
+    {
+      "video_id": "v19676f786936",
+      "task": "GT1",
+      "reference": "A person wearing a dark brown long-sleeved jacket moves sideways from left to right across the scene."
+    },
+    {
+      "video_id": "vdb999651d4fe",
+      "task": "GT1",
+      "reference": "A person wearing a black hooded jacket skips from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "v4848ae84755a",
+      "task": "GT1",
+      "reference": "A person wearing a black hooded jacket walks from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "vb9122b685f49",
+      "task": "GT1",
+      "reference": "A person wearing a dark brown long-sleeved jacket stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "v535d4e56b6cc",
+      "task": "GT1",
+      "reference": "A person wearing a dark brown long-sleeved jacket stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "ve005ab2f3c7f",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved jacket bends down toward the ground and then stands up again."
+    },
+    {
+      "video_id": "ve3317ceb6367",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top repeatedly performs jumping jacks in place."
+    },
+    {
+      "video_id": "vcdf563ed4688",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved jacket moves in repeated two-footed jumps from right to left across the scene."
+    },
+    {
+      "video_id": "v7ebb5de0d2a7",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved jacket repeatedly jumps up and down in place with both feet together."
+    },
+    {
+      "video_id": "v40efdc579cba",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top runs from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "v7152744a6f88",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved jacket moves sideways from right to left across the scene."
+    },
+    {
+      "video_id": "vf995065032b2",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top skips from right to left across the scene, then exits through the left edge."
+    },
+    {
+      "video_id": "v5d5da4422fd7",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved top walks from left to right across the scene, then exits through the right edge."
+    },
+    {
+      "video_id": "vbe59d2cdb2f6",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved jacket stands in place and repeatedly waves one raised arm."
+    },
+    {
+      "video_id": "v53b95b2dbc62",
+      "task": "GT1",
+      "reference": "A person wearing a black long-sleeved jacket stands in place and repeatedly waves both arms."
+    },
+    {
+      "video_id": "v7450b52ed87e",
+      "task": "GT2",
+      "reference": "A small black chair-like stand or container initially sits unattended on the grass beside a quiet residential road. A man enters from the lower left, walks to the object, and bends or reaches toward its upper surface. A small orange flame becomes visible on the object as he turns away and exits toward the lower left; during his departure, a light-colored vehicle briefly crosses a distant intersection. With no one nearby, the flame continues to flicker while gray smoke rises and drifts leftward and upward. The flame later disappears, the smoke dissipates, and the object remains in place without further visible activity through the final frame."
+    },
+    {
+      "video_id": "v294b648689b1",
+      "task": "GT2",
+      "reference": "A residential street is initially still, with a black metal stand on the roadside grass, two parked cars, and no people visible. A man enters from the lower left, walks to the stand, and leans or reaches toward its top. A small flame becomes visible there. He then steps away and exits toward the lower left, leaving the flame unattended. The fire fluctuates for a time and produces gray smoke that rises and drifts mainly upward and leftward. The flame later weakens to a small intermittent glow as the smoke thins and disperses. By the final portion, no person or visible flame remains and the street is still again."
+    },
+    {
+      "video_id": "v96c424c797db",
+      "task": "GT2",
+      "reference": "A small chair-like object stands on the grassy edge of a quiet residential street, with parked red and white cars remaining in place. At about 49 seconds, a man in dark clothing enters from the lower left and approaches the object. He reaches or leans toward its top, and a flame is visible there by about 58 seconds. The man then walks away and exits at the lower left while the object continues burning unattended. Flames and rising smoke persist for an extended period before gradually diminishing. By about 134 seconds, no flame is visible and the residual smoke dissipates, leaving the object standing on the grass through the final frame."
+    },
+    {
+      "video_id": "v2a017dbea4d8",
+      "task": "GT2",
+      "reference": "A residential street remains quiet for most of the sequence, with a red vehicle parked beneath foliage on the right, a white vehicle farther up the road, and a small stand beside the left-side fence. Around 88 seconds, one dark-clothed person enters from the lower left, walks to the stand, and briefly handles something near its top. A bright orange-red item then becomes visible at or immediately beside the stand. The person turns back, walks left, and exits through the lower-left edge, leaving the bright item behind. A gray or silver vehicle briefly crosses the distant end of the street. Later, gray haze develops near the left-side fence and stand, becomes more prominent and spreads around that area, and then gradually thins. No one returns before the video ends, and the bright item and parked vehicles remain in place."
+    },
+    {
+      "video_id": "v16bf55d049a3",
+      "task": "GT2",
+      "reference": "The sequence shows a damp park containing a sports court, lawn, winding paths, a red-roofed shelter, benches, trees, and playground equipment. For approximately the first minute, the park is empty, although vehicles intermittently travel along the road in the background. At about 61 seconds, one person in a light-colored top and dark pants enters from the lower left and walks away from the camera across the left side of the court toward the shelter. The person briefly remains near a small dark object beside the shelter with little visible movement, then turns back, walks toward the camera, and leaves through the lower-left edge by about 88 seconds. The park remains empty afterward until the final observation, with only intermittent background traffic."
+    },
+    {
+      "video_id": "v004a9bb742ef",
+      "task": "GT2",
+      "reference": "The clip begins with a fixed night-vision view of a quiet, apparently unoccupied park. At about 52 seconds, one person enters from the bottom-left and walks along the left side toward a tree and bench. The person remains briefly near the ground-level area there, though their exact actions are unclear. A bright, flame-like light then appears on the ground beside the tree and bench, intensifying enough to illuminate nearby pavement and foliage. The person moves away toward the lower-left and exits the frame. The bright source remains after the person has departed, fluctuates and gradually diminishes, and is no longer visible by roughly 110 seconds. The park then remains quiet and apparently unoccupied through the end."
+    },
+    {
+      "video_id": "v85e5b4c8bd43",
+      "task": "GT2",
+      "reference": "A silver van remains parked at the far left of a mostly empty parking lot, while a black rectangular container rests on a folding stand in the right half. At about 55 seconds, a person enters from the right and walks to the container. The person stops beside it and reaches toward or into it, after which an orange glow or small flame becomes visible inside. The person then walks back to the right and exits as smoke begins to rise. With no person visible, the dark smoke grows denser and develops into a broad, heavy plume spreading upward and mainly rightward, while a small orange glow or flame is intermittently visible in the container. The smoke later weakens and the haze clears. By the end, no person is present, no clear smoke or flame is visible, and both the container and the parked van remain in place."
+    },
+    {
+      "video_id": "v35255963514f",
+      "task": "GT2",
+      "reference": "A stationary camera overlooks two mostly empty parking areas separated by a grassy median, with an elevated guideway at the left and trees and buildings in the background. A lone black chair remains fixed in the right parking area throughout. Early in the sequence, a small light-colored rail vehicle travels leftward along the elevated guideway and disappears from view. Soon afterward, a broad shadow boundary shifts across the left parking bays. The foreground then remains quiet and largely unchanged: no pedestrians or nearby vehicles enter the parking areas, while only occasional tiny vehicles move on distant background roads."
+    },
+    {
+      "video_id": "vaeb3c6576e0f",
+      "task": "GT2",
+      "reference": "An empty, streetlit road remains unchanged until a person enters from the right and approaches a small metal-framed object near the curb. After the person bends or reaches near it, a flame appears at that location. The person retreats and exits to the right as the fire brightens. The unattended fire then burns strongly, producing a substantial plume of smoke that rises and drifts upward and left across the scene. The flame gradually diminishes to a small glow and disappears as the smoke thins. By the end, the road is empty again, and the object remains beside the curb without visible fire."
+    },
+    {
+      "video_id": "vcb945fab3d45",
+      "task": "GT2",
+      "reference": "A fixed view initially shows an empty paved compound with a dark folding chair-like object near the right-side building. After some time, one person enters from the lower left, crosses the concrete, and stops beside the object, where they appear to interact briefly near its upper or seat area. An orange glow or small flame then becomes visible on the object. The person turns away and exits toward the lower left as clear flames develop and dark smoke begins to rise. With no one visible, the object continues burning and emits thick smoke that spreads upward and leftward. The fire then subsides; the open flames disappear, residual smoke and haze gradually dissipate, and the object remains standing in the empty compound at the end."
+    },
+    {
+      "video_id": "veb22bc81d41b",
+      "task": "GT2",
+      "reference": "A fixed view shows a wet park with a sports court, lawn, curving footpath, gazebo, and playground. The area is initially empty. At about 41 seconds, a white-shirted person enters from the right and walks along the path toward the playground. Around 50 seconds, a red-shirted person enters from the same side and follows the route. The white-shirted person remains near the playground end of the path, while the red-shirted person stops farther down it. They stay separated, with only minor posture and arm changes visible and no physical contact. Around 121 seconds, both begin returning toward the camera and right side. The red-shirted person exits first, followed by the white-shirted person at about 142 seconds, leaving the park empty again through the end."
+    },
+    {
+      "video_id": "vb92238f0f5e0",
+      "task": "GT2",
+      "reference": "A fixed monochrome night camera overlooks a mostly empty parking lot divided by a raised central median. A light-colored minivan remains parked near the far-left end throughout the observation. Around 17 seconds, two headlights appear on the distant right-side roadway and advance toward the camera, growing larger and brighter. The vehicle continues along the right edge of the lot, strongly illuminates the pavement, passes close to the camera's right side, and exits the frame by about 31 seconds. The parking lot then returns to a quiet, nearly unchanged state, with the minivan still parked at the end and only occasional faint spots or streaks visible near the camera."
+    },
+    {
+      "video_id": "va7d17c5fbf5a",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a broad, mostly empty parking lot with a narrow grassy median and a light-colored minivan parked at the far left. After the lot remains quiet for roughly the first 45 seconds, a person in a white shirt enters from below and walks away from the camera, followed shortly afterward by a person in a red shirt. They proceed into the left half of the lot with the person in white ahead and closer to the median, then stop several parking spaces apart. For an extended interval, they remain separated and occasionally turn or shift slightly, but no clear physical interaction is visible. Both eventually turn around and walk back toward the camera along separate paths. The person in red exits at the lower left first, and the person in white exits shortly afterward, leaving the parking lot empty of pedestrians through the final frame."
+    },
+    {
+      "video_id": "vaa743a8900e2",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a large, mostly empty parking lot divided by a narrow median, with a light-colored minivan parked near the far end of the left section. Around 40 seconds, a person in a white shirt enters from the bottom and walks away from the camera beside the divider. A person in a red shirt then enters from the lower-left, and both continue deeper into the lot, with the person in white nearer the divider and farther ahead. They stop several parking spaces apart and remain separated while changing orientation, taking small steps, and occasionally moving their arms. The person in white makes several outward arm gestures, but no clear physical contact is visible. Around 122 seconds, both begin walking back toward the camera on separate paths. The person in red exits at the lower-left first, and the person in white follows shortly afterward. The final frames again show the parking lot without visible pedestrians and the minivan still parked in place."
+    },
+    {
+      "video_id": "v7b49f2f59892",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a broad, mostly empty divided parking lot, with a light-colored vehicle at the far left and an elevated structure, trees, power infrastructure, and tall buildings in the background. After the scene remains unchanged for about half a minute, three people enter one after another from the lower-left edge, wearing a white top, a dark top with yellow shorts, and a red top. They walk away from the camera through the left parking bays and stop at different distances. For an extended interval, they remain separated and occasionally turn, take short steps, change stance, or make small arm movements without visible physical contact. Near the end, all three walk back toward the lower-left side and leave in sequence: the red-clad person first, the person in yellow shorts next, and the white-clad person last. The final frames again show empty parking bays and an unchanged background."
+    },
+    {
+      "video_id": "vab11347b8d2f",
+      "task": "GT2",
+      "reference": "A fixed wide view shows a large, mostly empty parking area, with only intermittent distant movement during roughly the first 87 seconds. A person in a white shirt then enters from the bottom left, followed shortly by a person in a dark shirt and yellow shorts. They walk away through the left parking section, with the person in white ahead and nearer the grassy median. They later slow and remain separated while standing or making small positional changes, without any clearly visible physical interaction. Near the end, both begin moving back toward the camera, and the clip ends with the person in yellow shorts closer to the foreground on the left and the person in white approaching nearer the median behind and to the right."
+    },
+    {
+      "video_id": "vf6794a1e17ae",
+      "task": "GT2",
+      "reference": "The video begins with a fixed view of an empty, tree-lined intersection facing a distant domed building. At about 30 seconds, two people enter from the bottom and walk away from the camera into the intersection as a white car crosses the distant road from right to left. They slow and stop near the middle-left, turn toward one another, and remain there for an extended period, intermittently making small arm gestures, shifting their positions and orientations, and looking around. Additional vehicles pass across the distant road. Around 128 seconds, both people walk back toward the camera, with the dark-clothed person slightly ahead, and exit through the lower-left area by about 143 seconds. The intersection then remains empty through the final frame."
+    },
+    {
+      "video_id": "v3b970d8bbfaa",
+      "task": "GT2",
+      "reference": "The video begins with a fixed wide view of an empty terraced park beside a calm lake. At about 51 seconds, a man wearing a red shirt enters from the lower left and walks diagonally rightward onto the central paved path. He remains around the center-left area, occasionally taking short steps and repeatedly turning toward the camera, the lake, and the left side. Small dark flying objects intermittently cross the distant water or sky without visibly interacting with him. Near 133 seconds, the man walks back toward the lower left, briefly raises a hand to the side of his head or face, and exits. The lakeside park then remains empty through the final frame."
+    },
+    {
+      "video_id": "v67e172071c1d",
+      "task": "GT2",
+      "reference": "The scene begins with an empty outdoor driveway beside several buildings. At about 44 seconds, a person in black enters from the lower left and walks away along the driveway's left side. A person in red follows at about 50 seconds, and a person in white enters shortly afterward. The three stop at separated positions along the left side, with the white-shirted person closest to the camera and the black-clad person farthest into the scene near the curb. They remain there while making small posture changes and looking in various directions; the person in white intermittently raises a hand toward the face or upper body, but no clear physical contact occurs. Near 136 seconds, they begin leaving toward the lower left. The person in white exits first, followed by the person in red and then the person in black. The driveway is empty again at the end."
+    },
+    {
+      "video_id": "v4d21679413ba",
+      "task": "GT2",
+      "reference": "The scene begins with an empty outdoor road between buildings. At about 52 seconds, a dark-clothed person enters from the lower left and walks away from the camera along the road. A red-shirted person follows, and a white-shirted person then enters but stays nearer the foreground. The dark-clothed person slows and turns near the left curb as the red-shirted person approaches. The first two remain farther back near the curb while the white-shirted person stands separately in front. For an extended period, the three remain spread out and make only small posture and hand movements, with no clear physical contact. Near the end, the white-shirted person exits toward the lower left. The red-shirted and dark-clothed people then walk back in the same direction and leave, with the red-shirted person exiting first. The area remains empty in the final observations."
+    },
+    {
+      "video_id": "v0336ce934f4a",
+      "task": "GT2",
+      "reference": "An illuminated divided roadway is initially empty at night. A white sedan enters from the lower right, travels away along the right side, slows near the curbside planting strip, and then remains in nearly the same position. A dark-clothed person later appears beside the roadway-facing side of the sedan, moves around its rear, walks to the right curb, steps onto the sidewalk, and exits the frame to the right. The sedan remains there through the final observation, with no other visible traffic or pedestrians."
+    },
+    {
+      "video_id": "vff6c81f49d82",
+      "task": "GT2",
+      "reference": "The roadway is initially empty. A white sedan enters from the lower right, travels away along the right-side carriageway, moves toward the outer curb, and remains in one position. After a period without other visible activity, a road-facing door opens and one dark-clothed person exits. The person moves around the rear of the car toward the roadside, walks to the right, and leaves the frame. The sedan remains by the curb without further visible activity through the final observation."
+    },
+    {
+      "video_id": "vbf467f99d68a",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a broad divided roadway with lane markings, landscaped medians, and sidewalks. At the beginning, a single person walks rightward along the far-right sidewalk and leaves the frame at about 12 seconds. A dark, low, indistinct object already present near the right curb farther up the road remains stationary, and the pedestrian does not visibly interact with it. No vehicles pass, and after the pedestrian exits, the road and sidewalks remain empty and otherwise unchanged through the final observation."
+    },
+    {
+      "video_id": "vb6c1c9348486",
+      "task": "GT2",
+      "reference": "The scene begins with an empty divided roadway viewed by a fixed elevated camera. At about 69 seconds, a white sedan enters from the lower right and travels away from the camera along the right half of the road. It slows and appears to stop near the right side beyond the painted speed marking. A dark-clothed person then becomes visible beside the sedan, moves around its rear, and walks across the rightmost lane to the roadside planted or sidewalk area. The person continues rightward and exits the frame, while the sedan remains in place through the final observation."
+    },
+    {
+      "video_id": "vfa2bb59258a9",
+      "task": "GT2",
+      "reference": "For roughly the first 52 seconds, the illuminated divided road remains empty. A light-colored sedan then enters from the lower right, travels away from the camera, slows, and stops near the right curb. After it has remained there for a short period, a dark-clothed person appears beside its left side, moves around the rear, and walks diagonally toward the right sidewalk. The person continues rightward along the sidewalk area and exits the view, while the sedan remains stopped through the final frame and no other traffic enters."
+    },
+    {
+      "video_id": "v2e58331adb34",
+      "task": "GT2",
+      "reference": "Throughout the observations, a fixed elevated camera shows a broad, nearly empty divided roadway and intersection with lane markings, sidewalks, planted curb areas, utility poles, and distant hills. A dark compact car remains beside the left curb in the foreground. No pedestrians or other moving vehicles enter the visible scene, and the roadway, surroundings, and car position remain discernibly unchanged through the final observation."
+    },
+    {
+      "video_id": "vef98e529f345",
+      "task": "GT2",
+      "reference": "Throughout the sequence, the camera remains fixed on a broad, quiet roadway and intersection. A dark blue vehicle stays near the left curb without any discernible positional change. The remaining lanes and crosswalk area remain empty, with no observed entrances, interactions, or meaningful changes through the final frame."
+    },
+    {
+      "video_id": "v32ca268d9c87",
+      "task": "GT2",
+      "reference": "Throughout the observed sequence, a fixed elevated camera overlooks a quiet, illuminated multi-lane road and intersection at night. A dark van remains stopped along the left edge beside a planted median, while the visible roadway and surrounding pedestrian areas remain empty of pedestrians and clearly moving traffic. Around 21 seconds, a distant amber-colored light becomes brighter; apart from this lighting change, the scene remains stable through the final frame, with no observed entrances, interactions, or departures."
+    },
+    {
+      "video_id": "v45b939f669e1",
+      "task": "GT2",
+      "reference": "For most of the sequence, a fixed elevated camera overlooks a broad, nearly empty divided road and intersection, with a dark SUV beside the left curb facing the camera. A distant traffic signal later appears amber. At about 128 seconds, a person in dark clothing enters from the lower left and walks along the left sidewalk toward the SUV. The person reaches the vehicle, moves beside its left side, and becomes fully occluded. The person does not reappear separately. Near the end, the signal appears unlit, and in the final observation the SUV shifts slightly toward the camera while remaining near the curb."
+    },
+    {
+      "video_id": "vaa53878d2157",
+      "task": "GT2",
+      "reference": "For most of the observed period, the fixed camera overlooks a quiet, broad multilane road bordered by sidewalks and vegetation, with mountains, overhead direction signs, and a distant intersection ahead. A dark van-like vehicle remains beside the left curb, while the visible lanes are otherwise empty. Near the end, one dark-clothed pedestrian enters from the lower-left edge and walks away from the camera along the left sidewalk, remaining there in the final observation without interacting with the vehicle."
+    },
+    {
+      "video_id": "v12eb655a8566",
+      "task": "GT2",
+      "reference": "A sunlit enclosed yard remains empty until two people enter from the camera side at about 55 seconds. The person in dark trousers and a dark sleeveless outer layer moves ahead, followed by the person in a black jacket and blue jeans. Near the building-side walkway, they turn toward each other and begin a prolonged physical confrontation. They repeatedly approach, extend their arms, make bodily contact, jostle or grapple, separate, and re-engage as their interaction moves across the grass, beside the walkway, and in front of the far gates. At about 125 seconds, they disengage and walk back toward the camera, exiting one after the other. The yard then remains empty through the final observation."
+    },
+    {
+      "video_id": "vc587aab5fdd0",
+      "task": "GT2",
+      "reference": "A fixed view shows a quiet residential street with a red car parked at the near right edge and a white car farther up the road. After roughly a minute with no people present, a person in a white shirt and red shorts enters from the lower left, followed by a dark-clothed person. They repeatedly approach, make hand, arm, and upper-body contact, separate, and reengage while moving between the road and grassy verge. Their interaction includes pushing or holding motions, rapid arm and leg movements, and several moments when the white-shirted person moves toward the utility pole or bends forward. The dark-clothed person also briefly drops down near the grass before beginning to rise. Following one final reengagement, they stop making physical contact and leave through the lower-left edge, with the dark-clothed person ahead and the white-shirted person following. The street then remains empty and unchanged through the final frame."
+    },
+    {
+      "video_id": "v1da24b4b8fc5",
+      "task": "GT2",
+      "reference": "The video begins with a quiet residential street, two parked cars, and only two brief vehicle passages at the distant intersection. Around 62 seconds, three people enter from the lower left: one in a white shirt and orange shorts, one dressed in black, and one in a burgundy shirt and green pants. After converging and gesturing, they engage in a sustained physical confrontation across the road and adjacent grass, repeatedly grabbing, pushing, and pulling. The white-shirted person is repeatedly driven toward the grass, bends or stumbles, and later crouches low in the road before rising, while all three continue separating briefly and re-engaging. Around 116 seconds, the close contact subsides, and the three walk toward the lower left and leave the camera view. The street then remains empty through the end."
+    },
+    {
+      "video_id": "v019d0525a83c",
+      "task": "GT2",
+      "reference": "A quiet residential street is shown with a red car parked at the right edge and two distant people near an intersection; a dark vehicle initially seen there disappears by the next observation. After about a minute, a burgundy-shirted person enters from the bottom, followed by a white-shirted person in orange shorts and a dark-clothed person. The three engage in prolonged close physical interaction involving reaching, gripping, pulling, circling, and repeated bending or crouching by the burgundy-shirted person as they move between the road and grassy verge. The burgundy-shirted person goes down near the verge, later rises, moves left, bends again, and then breaks away and runs out through the lower-left edge. The other two remain briefly, look and gesture toward the left, and then leave through the same side. The foreground stays empty and unchanged through the final observation."
+    },
+    {
+      "video_id": "v6a1e865d54a6",
+      "task": "GT2",
+      "reference": "A quiet residential street remains empty for roughly the first minute, with a red car parked in the right foreground and a white car farther up the road. Two people then enter from the lower left, turn toward each other, and begin a sustained physical interaction. They repeatedly grapple, push, reach, make broad arm or leg movements, separate, and approach again while moving between the left verge and the center-left roadway. Early in the interaction, the person in red goes down onto hands and knees before rising, and later repeatedly bends or crouches as the engagement continues. Near the end, they stop engaging and walk out together through the lower-left edge, led by the dark-clothed person. The street then remains empty through the final frame, apart from a distant vehicle briefly appearing near the far intersection."
+    },
+    {
+      "video_id": "vfa9da044aa22",
+      "task": "GT2",
+      "reference": "A residential street remains quiet for roughly the first 54 seconds, with a red car parked on the right. Two men then enter from the lower-left and approach each other. They engage in a prolonged physical struggle involving repeated grasping, pushing, pulling, separations, and broad arm or leg motions while moving between the road and the grassy verge beside the left fence. The man in red eventually crouches and sits or falls on the road, then gets back up after the man in white approaches and makes a leg motion near him. When they reengage, the man in white goes down on the grass, where the man in red crouches or kneels over or beside him briefly. The man in red then steps into the road while the man in white remains seated; the man in white rises and approaches again. The confrontation ceases, and both men walk closely together out through the lower-left. The street remains empty afterward through the final frame."
+    },
+    {
+      "video_id": "v1e557f97b2f1",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a wet park containing part of a court, grass, paths, a gazebo, trees, and playground equipment. The park remains empty until about 51 seconds, when two young men enter from the lower right and walk together onto the court. They face each other and begin an extended, vigorous physical interaction involving repeated reaching, gripping, pushing, pulling, close upper-body contact, low bending, and brief separations. They move around the court while repeatedly disengaging and re-engaging, and neither person visibly falls. Near the court's upper-right boundary they make contact several more times before disengaging. At about 128 seconds, they stop, walk side by side toward the lower right, and exit the frame. The park then remains empty through the final observation."
+    },
+    {
+      "video_id": "vfd751d224eac",
+      "task": "GT2",
+      "reference": "A fixed wide view initially shows an empty terraced lawn beside a lake. At about 54 seconds, a person in a white top and yellow bottoms enters from the right, followed by a person in dark clothing. After walking briefly to the left, they turn toward each other and begin an extended close physical interaction. They repeatedly reach for and hold each other's arms or upper bodies, shift their footing, lean, turn, separate, and re-engage. At various points one person bends deeply or crouches while the other remains standing nearby or maintains contact, but both repeatedly return to standing and neither remains down. Around 124 seconds, they stop interacting, walk to the right, and leave the frame, with the dark-clothed person going first. The terraces then remain empty through the end."
+    },
+    {
+      "video_id": "vc3a16e537ae8",
+      "task": "GT2",
+      "reference": "An outdoor paved service area remains empty until three people enter sequentially from the right: first a person in white, then one in red, and finally one in black. They gather on the concrete pad and engage in prolonged close physical interaction, repeatedly approaching, reaching, holding or pushing, separating, and regrouping. The activity moves between the open pad and the right-side wall, with the participants changing positions and pairings; the person in white is frequently bent forward, and arms and occasionally legs are extended during the exchanges. No participant remains down. The interaction eventually subsides, and all three leave at the right edge. The area then remains empty through the final observation."
+    },
+    {
+      "video_id": "v5e5c9f7a5938",
+      "task": "GT2",
+      "reference": "The video opens on an empty driveway and concrete apron beside a school building. At about 51 seconds, a person in red enters from the right, followed shortly by a person in dark clothing. They walk left onto the apron and turn toward one another. From roughly 59 to 125 seconds, they engage in an extended back-and-forth physical interaction, repeatedly approaching, reaching toward and holding one another, making pushing or pulling motions, bending or pivoting, and separating briefly before making contact again. They remain mainly around the center-right of the apron and later near its building-side edge. Around 126 seconds, the interaction ends, and they walk right along the building with the dark-clothed person ahead and the red-clothed person following. Both exit by about 136 seconds, after which the area remains empty through the final frame."
+    },
+    {
+      "video_id": "vea2bd90a02f9",
+      "task": "GT2",
+      "reference": "A fixed view shows a quiet residential street with a red car parked beneath palm foliage in the right foreground and a white car parked near the bend farther up the road. Apart from a light-colored vehicle briefly appearing on the distant cross street, the scene remains still until a person in a white shirt and orange-red shorts enters from the lower left, followed by another person in a dark red shirt and gray-green pants. They walk away from the camera with the white-shirted person slightly ahead. Near the middle of the road, both slow, abruptly bend or crouch, and fall onto the roadway. The dark-red-shirted person ends up prone near the left-center, while the white-shirted person lies on their side closer to the parked red car. Neither person shows clearly visible further movement through the final observation."
+    },
+    {
+      "video_id": "v4ee081b28ba8",
+      "task": "GT2",
+      "reference": "A residential street remains quiet and unoccupied for most of the observation, with a red vehicle near the camera and a white vehicle farther up the road staying in place. Around 28 seconds, a small, partially obscured portion of a dark-colored vehicle briefly appears near the distant bend behind the white vehicle and then disappears. At about 100 seconds, a man in dark clothing enters from the lower left and walks diagonally toward the center of the road. Near the center-left, he slows, comes down onto his knees, and then lowers or falls forward onto the pavement, ending face-down. He remains in approximately the same position through the final observation; no other person approaches, and the red and white vehicles remain stationary."
+    },
+    {
+      "video_id": "v31ae1bc1c241",
+      "task": "GT2",
+      "reference": "At dusk, a fixed camera overlooks a mostly empty divided parking area with a white vehicle parked on the left and a dark vehicle near the far-right edge. A dark car enters from the lower right and drives away toward the far end. After a quiet interval, another dark car approaches along the left roadway and exits through the lower-left edge. Following another period without notable activity, three people enter from the lower right and walk away across the right-side parking bays. The person in the light top crouches first, after which the other two also descend or fall. By about 103 seconds, all three are lying close together on the pavement, where they remain without a clearly visible positional change through the final frame."
+    },
+    {
+      "video_id": "vb550b9b78959",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a broad, tree-lined road leading to a distant T-intersection, where vehicles intermittently cross in both directions. After the foreground remains empty for an extended period, two men enter from the lower right, followed by a third, and the three walk away from the camera along the right half of the roadway. Around 52–55 seconds, all three abruptly bend, drop, or fall and end up lying on the pavement. They remain in approximately the same positions through the final observation, with one man separated on the left and the other two closer together on the right, while distant traffic continues and nobody approaches them."
+    },
+    {
+      "video_id": "vb81e6cba6bbf",
+      "task": "GT2",
+      "reference": "A fixed wide view initially shows a quiet, empty intersection and a tree-lined road leading toward a domed building. Vehicles later pass intermittently in both directions along the distant cross street, while the foreground remains clear. At about 59 seconds, a dark-clothed person enters from the lower right and walks diagonally into the road. A second person in a dark blue top and shorts then enters from the right, and the two walk separately away from the camera. Around 73 seconds, both abruptly bend toward the pavement. The right-side person goes down first, and the other briefly sits or braces before both are lying apart on the roadway. They remain visibly motionless through the final observation, with no other person approaching and no nearby vehicle entering the foreground."
+    },
+    {
+      "video_id": "v10df360f4568",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a quiet, tree-lined road and intersection with a domed structure in the distance. A dark car crosses the far intersection from right to left early in the sequence, after which the foreground and main road remain empty for an extended period. Two people then enter from the lower right and walk diagonally into the roadway, moving away from the camera while staying a short distance apart. Near the middle of the road, both lower into crouched or bent postures and go down onto the pavement, where they lie several feet apart. They remain in approximately the same positions through the final frame, with no clear movement visible. During this period, two light-colored vehicles separately cross the distant intersection in opposite directions, but no one approaches the pair."
+    },
+    {
+      "video_id": "v02586ea32baa",
+      "task": "GT2",
+      "reference": "A fixed wide view shows a quiet low-tide beach beside an orange building, with a grassy and rocky strip between the beach and a low foreground wall. A small distant figure remains near the rocks on the right. At about 75 seconds, a person in a dark top and red or orange shorts enters from the right and walks leftward toward the beach. Around 85 seconds, two additional people—one in a white top and the other in a red top—enter from the same side and approach the first person. The three gather closely on the grass, bend or crouch, and then go down together into a compact cluster. From about 94 seconds through the final observation, all three remain lying on the grass, with no clear recovery or departure visible."
+    },
+    {
+      "video_id": "v549d9c8e6b01",
+      "task": "GT2",
+      "reference": "A fixed nighttime view shows a quiet waterfront promenade that remains empty for about the first 64 seconds. A yellow- or tan-clothed figure then enters from the far right and moves left along the lower path, followed by a light-clothed figure who approaches. The light-clothed figure bends toward the first figure, the two come into close contact, and both fall onto the path near the water. The yellow-clothed figure ends up closer to the water, while the light-clothed figure lies nearer the curb. Both remain in approximately those positions through the final frame, with no clearly observable recovery or departure."
+    },
+    {
+      "video_id": "vbefe1cae68fe",
+      "task": "GT2",
+      "reference": "The video shows a fixed wide view of an initially empty terraced park beside a lake. Around 82 seconds, a person in bright yellow enters from the right and walks left, followed shortly by a dark-clothed person moving along a nearby lower section. The yellow-clothed person then lowers to the ground and lies prone on the grass. The dark-clothed person approaches, bends or crouches, and also goes down nearby. Both remain lying in separate nearby positions without a clear meaningful change through the final sampled frame."
+    },
+    {
+      "video_id": "v1691802a1d3a",
+      "task": "GT2",
+      "reference": "A fixed camera shows a quiet, illuminated terraced lakeside promenade at dusk. The area remains empty until a light-green-clad person enters from the right and walks left along the path nearest the water. Two more people, wearing tan and dark clothing, then enter on lower paths and move left, drawing close to each other while the first person continues ahead. Around 77–80 seconds, all three abruptly lower and end up down on adjacent sections of the promenade. They remain there without clear subsequent movement or assistance through the final observation."
+    },
+    {
+      "video_id": "v8bb5ed95857c",
+      "task": "GT2",
+      "reference": "A fenced residential yard remains empty until a man enters from the bottom of the frame carrying a black rectangular case. He crosses the lawn to the paved walkway beside the house, bends down, and places the case near the doorway. He then turns back, walks across the lawn toward the camera, and exits through the bottom of the frame. The yard remains empty afterward, and the unattended case stays on the walkway through the end of the video."
+    },
+    {
+      "video_id": "ve6e1c9662016",
+      "task": "GT2",
+      "reference": "For most of the observed sequence, a wet residential street is empty and unchanged. Around 79 seconds, a person carrying a large olive-green backpack enters from the bottom of the frame and walks away from the camera along the right side of the road. The person removes the backpack, places it on the brick sidewalk beside the hedge and curb, briefly looks toward the camera, and then turns and walks back toward the camera without it. After the person exits through the bottom of the frame, the backpack remains unattended in the same location and the street stays empty through the final observation."
+    },
+    {
+      "video_id": "v1cde46885ea4",
+      "task": "GT2",
+      "reference": "A quiet residential street remains mostly still, with a red car parked beneath palm trees on the near right and a light-colored car farther up the road. Brief, partially visible vehicle activity occurs near the distant junction. At about 86 seconds, a person in dark clothing enters from the lower left carrying a small red handled container and walks up the left side toward the grassy verge. The person steps onto the grass, bends down, and leaves the container upright near the road. They then turn back, walk toward the lower left, and exit the frame. The street is again empty of pedestrians, while the red container remains on the grass and the rest of the scene stays unchanged through the final frame."
+    },
+    {
+      "video_id": "vdf9b5088fa6a",
+      "task": "GT2",
+      "reference": "Throughout the observations, the fixed camera overlooks a quiet, largely vacant parking area divided by a narrow grassy median. A light-colored vehicle stays in approximately the same location on the access road at the far left, while the parking bays and right-side roadway remain empty. The elevated track, power-line tower, trees, covered walkway, and distant buildings form a stable background. No clear entrances, exits, interactions, or meaningful changes are observed by the final frame."
+    },
+    {
+      "video_id": "v3f0690c4955f",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a mostly empty parking area beside an elevated railway. Early in the sequence, a train travels along the elevated track toward the upper-left and disappears. The scene then remains quiet and largely unchanged for an extended interval. Near the end, a person in a dark top and yellow shorts enters from the bottom-right carrying a red rectangular container, walks into the right half of the lot, and places it on the pavement near a parking-space line. The person then walks back toward the bottom-right and exits, leaving the red container behind through the final frame."
+    },
+    {
+      "video_id": "vc5754ac5f4c1",
+      "task": "GT2",
+      "reference": "A fixed wide view shows a landscaped T-intersection with a domed building in the distance. The roadway is initially empty. Three vehicles then pass separately in both directions along the distant cross street. At about 74 seconds, a person carrying a red rectangular container enters from the lower right and walks to the curb at the right-hand corner of the central road. The person bends down, places the container on the pavement, and then walks back to the right and exits, leaving it beside the curb. Two more vehicles subsequently pass in opposite directions along the distant road. The intersection remains quiet through the end, and the red container stays unattended beside the right curb."
+    },
+    {
+      "video_id": "v891438e2f275",
+      "task": "GT2",
+      "reference": "A fixed camera shows a quiet, initially unoccupied terraced park beside a lake. At about 77 seconds, an adult in dark clothing enters from the lower right carrying a bright pink soft bag or bundle, bends down, and places it on the paving beside the steps. The person then exits to the right. The pink item remains in the same location without further visible interaction through the final frame."
+    },
+    {
+      "video_id": "v0393117f41e0",
+      "task": "GT2",
+      "reference": "For most of the sequence, a fixed camera overlooks a quiet, empty waterfront promenade at night. At about 85 seconds, a person in a light-colored long coat enters from the right and moves a dark case-like object leftward along the lower path. The person bends near the object, stands apart from it, and then returns to the right and exits the frame. The object remains on the path without further visible interaction or notable change through the end of the sequence."
+    },
+    {
+      "video_id": "v00b9e2366c1c",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks an initially empty terraced lawn and concrete paths beside a lake. At about 80 seconds, a man in a red shirt enters from the right carrying a black rectangular case in his right hand. He walks onto the lower-right path, bends down, and places the case upright near a low concrete edge. He then steps away, moves quickly back toward the right, and exits the frame. No people are subsequently visible, and the case remains upright in the same place through the final observation."
+    },
+    {
+      "video_id": "v55e7d04c8150",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a quiet paved area beside several buildings. The scene remains empty for most of the observation. A person in dark clothing then enters from the right carrying a bright pink bag, walks a short distance left, and places the bag on the concrete near a drainage grate. The person turns, walks back to the right, and exits, leaving the bag behind. The pink bag remains unmoved beside the grate, with no further visible activity through the final frame."
+    },
+    {
+      "video_id": "v59694f25acff",
+      "task": "GT2",
+      "reference": "A fixed nighttime view initially shows an empty, illuminated divided roadway. Later, a distant headlight appears on the left half of the road and approaches until a single visible rider on a two-wheeled motor vehicle can be identified. Near the camera, the vehicle moves diagonally across the double yellow center lines into the right half of the roadway and exits at the lower-right edge. The roadway then remains empty through the final observation, with no other road users or interactions visible."
+    },
+    {
+      "video_id": "v622757b03cba",
+      "task": "GT2",
+      "reference": "A fixed elevated camera overlooks a broad, gently curving roadway with double yellow center lines, sidewalks, bare trees, and landscaped planters. The road is initially empty. Around 64 seconds, a white van appears in the distance on the left side of the center lines and approaches the camera. Near the camera, it moves diagonally across the double yellow lines into the right half of the roadway and exits at the lower-right edge around 90 seconds. The road then remains empty through the final observation."
+    },
+    {
+      "video_id": "vc7fe3a008964",
+      "task": "GT2",
+      "reference": "A fixed elevated view shows a broad divided roadway curving into the distance and initially remaining empty. A motorcycle carrying a single rider then appears far away on the left half of the road and approaches the camera. Near the foreground, it travels diagonally across the double yellow center lines into the right half of the roadway and exits near the lower-right edge of the frame. The roadway remains empty for the rest of the observations."
+    },
+    {
+      "video_id": "v73720d7249ee",
+      "task": "GT2",
+      "reference": "A fixed elevated view shows a broad, sunlit multi-lane roadway that is initially empty. At about 81 seconds, a small motorcycle or scooter carrying a rider appears in the distance on the left half of the road and approaches diagonally toward the center. It crosses the double yellow center lines, rapidly travels toward the camera across the right-side lanes, and exits at the lower-right edge by about 91 seconds without any visible interaction with another road user. The roadway then remains empty through the final observation."
+    },
+    {
+      "video_id": "v3fcccf2e7d46",
+      "task": "GT2",
+      "reference": "A fixed elevated view shows a broad divided road bordered by sidewalks, landscaped strips, trees, and streetlights. The roadway remains empty until about 75 seconds, when a lone rider on a small two-wheeled vehicle appears in the distance near the center of the road. The rider approaches the camera, moves onto the right-hand side, passes close by, and exits through the lower-right edge at about 90 seconds. The road then remains empty through the final observation."
+    },
+    {
+      "video_id": "v4c10199dda25",
+      "task": "GT2",
+      "reference": "A fixed elevated view initially shows an empty, broad, marked roadway. Around 60 seconds, one dark-colored compact car appears near the distant leftward curve and steadily approaches the camera. It passes through the transverse marked crossing area near the middle of the scene, then travels across or alongside the double yellow center lines toward the image-right side as it reaches the foreground. The car passes close to the camera and exits through the lower-right edge around 90–91 seconds. The road then remains empty through the final observation."
+    },
+    {
+      "video_id": "v004f63b8879b",
+      "task": "GT2",
+      "reference": "The fixed view shows a broad, quiet roadway that remains empty for roughly the first minute. A small dark flatbed truck then appears in the distance on the left side of the center lines and approaches the camera. Near the crosswalk, it moves toward the center, turns diagonally across the double yellow lines toward the camera-right side, passes through the foreground, and exits at the right edge. The road is empty again for the remainder of the observations."
+    },
+    {
+      "video_id": "v2dd257be6113",
+      "task": "GT2",
+      "reference": "The fixed view initially shows an empty divided roadway and intersection. At approximately 89 seconds, a single motorcycle appears in the distance with its headlight on and approaches the camera. It crosses the intersection, continues along the right side of the roadway, passes close to the camera, and exits at the lower-right edge at about 102 seconds. The roadway then remains empty through the final observation, with no visible pedestrians, other moving vehicles, or interactions."
+    },
+    {
+      "video_id": "vb1187cc8434c",
+      "task": "GT2",
+      "reference": "A fixed elevated view shows a broad multilane road leading toward an intersection, with sidewalks, overhead signs, traffic lights, and distant hills. The roadway remains empty until a small dark-blue flatbed truck appears far away on the left and approaches the camera. Near the foreground, the truck travels diagonally across the double yellow centerlines into the right-side lanes, passes close to the lower-right edge, and exits the frame. The road then remains empty and unchanged through the final observation, with no pedestrians, other vehicles, or visible interactions."
+    },
+    {
+      "video_id": "v36cc9e6a7f55",
+      "task": "GT2",
+      "reference": "A fixed camera shows a broad, quiet divided roadway with marked lanes, sidewalks, streetlights, overhead signs, and mountains in the background. The road remains empty until a motorcycle carrying one visible rider appears in the distance around 84 seconds. It approaches diagonally from the left, crosses the central road markings, and rapidly nears the camera. The rider, apparently wearing a red helmet, passes close by through the right-side lanes on an apparently red-and-white motorcycle and exits at the lower-right edge around 89 seconds. The roadway then remains empty through the final observation."
+    },
+    {
+      "video_id": "vf694ea6f6e3b",
+      "task": "GT2",
+      "reference": "A fixed nighttime camera overlooks an empty brick-paved area beside a darker roadway or paved section. The scene remains largely unchanged until light from an approaching vehicle spreads across the bricks from the upper left. A motorcycle or scooter carrying one visible rider then enters with a very bright headlight, travels diagonally toward the lower right, passes close across the foreground, and exits at the right edge. Red illumination is briefly visible on the pavement behind it. The area is empty again after the vehicle leaves and remains so through the final frame."
+    },
+    {
+      "video_id": "v6ce089184f9e",
+      "task": "GT2",
+      "reference": "A fixed elevated camera shows a broad paved plaza with persistent bright glare in the upper-right. The plaza remains empty until about 80 seconds, when a lone person in dark hooded clothing enters from the distant upper-left while standing on a two-wheeled personal transporter. The rider moves diagonally toward the camera and to the right, passes through the upper-middle and center-right portions of the view, and exits at the right edge by about 92 seconds without any visible interaction. The plaza then remains empty through the final observation."
+    },
+    {
+      "video_id": "v0b4f2ee17ff2",
+      "task": "GT2",
+      "reference": "The video holds on an empty brick-paved open area at night. Broad patches of light briefly cross the ground several times, although their source remains outside the frame. Later, a small bright point appears near the upper-left edge and grows as it approaches. A dark-clothed person then becomes visible riding upright on a compact illuminated personal mobility device. The rider travels diagonally toward the foreground and lower right, while the device's light sweeps over the bricks and casts a long shadow, before exiting at the right edge. The area remains empty through the final frame."
+    },
+    {
+      "video_id": "vfda252ae7cca",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a sunlit brick-paved plaza with a pale rectangular paved area near the top and long shadows across the foreground. The plaza is initially empty. Around 50 seconds, a distant person enters from the upper left on a small two-wheeled standing transporter. Wearing a bright yellow outer garment and dark pants, the rider remains upright, holds the handlebar, and travels diagonally across the plaza toward the right. The rider passes through the middle of the view, comes somewhat closer to the camera, and exits at the right edge around 85 seconds. The plaza is then empty again. Around 131–132 seconds, an unidentified shadow briefly extends into the frame from the right without a visible source. It disappears, and the empty plaza remains unchanged through the final observation."
+    },
+    {
+      "video_id": "v38f6624a1228",
+      "task": "GT2",
+      "reference": "A fixed nighttime camera overlooks a broad paved plaza with distant lights and stationary structures along the right edge. The plaza is initially empty, although broad bands of illumination and shadow occasionally pass across the ground. Near 103 seconds, one person appears in the upper-left area and moves diagonally toward the foreground and right side, accompanied by a small light-toned shape near their feet. The person and the indistinct accompanying shape leave through the right edge by about 126 seconds, after which the plaza remains empty until the end."
+    },
+    {
+      "video_id": "v07bb91769c6d",
+      "task": "GT2",
+      "reference": "A fixed nighttime view shows an open brick-paved plaza remaining empty for most of the sequence, with distant perimeter lights, roadside activity, and occasional broad illumination sweeping across the ground. Late in the sequence, a bright light approaches diagonally from the upper-left toward the camera and the right. It resolves into one person standing upright on a compact wheeled personal mobility device equipped with a forward-facing light. The rider steadily crosses the foreground toward the right edge, exits the frame, and leaves the plaza empty again."
+    },
+    {
+      "video_id": "vaea058e099fa",
+      "task": "GT2",
+      "reference": "A fixed view shows a quiet paved park area beside a sandy playground. The scene remains empty for roughly the first minute. A helmeted rider wearing a bright yellow-green outer layer then appears far down the central path and approaches on a small red motorized two-wheeler with a dark rear cargo box. Near the playground, the rider turns left, follows the curved route across the upper-left area, and then curves toward the camera along the left side. The rider passes through the left foreground and exits at the bottom-left edge. No interaction with another person occurs, and the park remains empty through the final observation."
+    },
+    {
+      "video_id": "v0bbb951d0772",
+      "task": "GT2",
+      "reference": "The video presents a fixed view of an initially empty playground and paved plaza. Around 76 seconds, a lone cyclist emerges from behind the play structure on the right and rides leftward along the path behind the sandy play area. The cyclist then follows the curved path on the left, turns toward the camera, crosses the paved foreground, and exits through the bottom of the frame around 94 seconds. The playground and paths remain empty afterward through the final observation."
+    },
+    {
+      "video_id": "v9035265296d3",
+      "task": "GT2",
+      "reference": "The video shows a fixed wide view of a park playground with paved paths, play and exercise equipment, benches, and landscaping. The area is initially empty and remains unchanged until around 71 seconds, when a lone bicyclist enters from the far right on the rear path. The rider travels leftward, is briefly obscured by parts of the playground structure, and reappears near the green slide. Continuing across the rear paved area, the bicyclist curves onto the central brick paving and rides diagonally toward the camera. The rider exits through the bottom of the frame around 93 seconds without interacting with anyone. The playground and paths then remain empty and visually unchanged through the end."
+    },
+    {
+      "video_id": "v7000c16b3119",
+      "task": "GT2",
+      "reference": "The video begins with a fixed elevated view of an empty playground and broad paved plaza. At about 69 seconds, a helmeted rider on a small red motorized two-wheeler enters along the far-right background path, moves left behind the playground structures, and is briefly obscured. The rider reappears near the slide, curves onto the open plaza, and travels toward the camera. A dark rear cargo box becomes visible as the vehicle passes close to the camera and exits at the lower-right edge around 92–93 seconds. No other person or interaction is visible, and the playground and plaza remain empty through the end of the video."
+    },
+    {
+      "video_id": "v22dc300127b7",
+      "task": "GT2",
+      "reference": "A sunlit enclosed yard remains empty and unchanged at first. A person later appears beyond the small pedestrian gate, opens it, and enters the yard. After turning back and appearing to close the gate, the person walks along the paved path beside the yellow building toward a nearby doorway. They reach toward the entrance and pass inside, leaving the yard empty with no further visible activity through the end of the video."
+    },
+    {
+      "video_id": "v3d62edaf2bae",
+      "task": "GT2",
+      "reference": "A fixed camera overlooks a quiet enclosed yard beside a yellow building. The yard remains empty until around 80 seconds, when a man appears behind the small rear pedestrian gate. He opens the gate toward the yard, steps onto the paved walkway, and moves the gate back toward its closed position. He then walks along the building, passes through the dark doorway, and disappears from view. The yard remains empty through the end of the video."
+    },
+    {
+      "video_id": "v44927b97d130",
+      "task": "GT2",
+      "reference": "A fixed security camera shows a quiet enclosed yard beside a yellow building. The yard remains empty and unchanged for roughly the first 79 seconds. One person then comes through the open pedestrian gate, steps onto the paved path, and walks toward an already-open doorway in the building. The person enters through the doorway and disappears from view by about 94 seconds. The yard remains empty and visually unchanged for the rest of the video."
+    },
+    {
+      "video_id": "ve1023f60ca5b",
+      "task": "GT2",
+      "reference": "A quiet residential street remains unchanged for some time, with a red car partly visible at the lower right and a light-colored car parked farther up the road. A person in dark clothing then enters from the lower left, walks diagonally along the roadside toward the house on the left, and approaches its metal fence. The person steps onto the raised stone base, climbs over the fence, descends into the property, and becomes obscured behind the fence and vegetation. No person is visible afterward, and the parked cars remain in place. Around 118 seconds, a distant bright light or object briefly appears near the far upper-right end of the road and disappears. The street then remains quiet and unchanged through the final frame."
+    },
+    {
+      "video_id": "v0bd870cba26a",
+      "task": "GT2",
+      "reference": "A quiet residential street beside a fenced property remains empty for an extended period, with a red car parked at the right edge. A person in dark clothing then enters from the lower left, walks along the grassy roadside, climbs the low wall and metal fence, and moves inside the property. A second person in a light shirt and shorts follows the same route and also climbs inside, while the first person is briefly visible beyond the fence. A third person wearing a dark brown or reddish top and long pants arrives during the second person's climb, approaches the same fence, climbs over, and disappears into the property. The roadside then becomes empty again. A light-colored vehicle briefly appears on the distant road at the upper right, after which the scene remains still through the final frame."
+    },
+    {
+      "video_id": "v9744500c5a7c",
+      "task": "GT2",
+      "reference": "A quiet residential street remains largely unchanged for an extended period, with a red car parked on the right. A person in dark clothing then enters from the lower left, walks to a red metal fence on the left, and climbs onto or over it toward the property, becoming partly obscured. A second person in a light-colored top and red shorts follows and similarly moves onto or over the fence toward the property. A third person in a dark red top and long pants then follows the same route, climbs onto or over the fence, and gradually disappears from view on the property side. A vehicle is briefly visible at the distant junction during the sequence, but no direct physical interaction between the people is clearly visible. The nearby street is again empty of pedestrians afterward and remains unchanged through the final frame."
+    },
+    {
+      "video_id": "v958307953faa",
+      "task": "GT2",
+      "reference": "A fixed wide view shows a quiet low-tide beach with patchy shoreline grass, a low foreground wall, a chair, and an orange building on the right. After the scene remains empty for some time, a person in a white shirt and dark pants enters from the bottom center, walks across the foreground grass to the wall beside the chair, and climbs over it. The person then walks away from the camera across the beach-side grass, gradually heads right, and moves quickly across the rocky ground toward the orange building. The person disappears from view at the right edge near the building, after which the nearby beach and foreground remain empty through the end."
+    },
+    {
+      "video_id": "va7e98e2a708f",
+      "task": "GT2",
+      "reference": "The video holds on a quiet, fixed view of a grassy yard, a low wall, and an exposed tidal beach. After a long empty interval, a person in a white shirt enters from the lower right and crosses the wall to the beach side. A person in red follows across at approximately the same place, followed by a third person in a dark top and reddish shorts. The three proceed generally rightward along the grassy and rocky beach edge, with the first two ahead and the third following. The first two disappear near the building side, and the third briefly extends both arms before also exiting at the far right. The scene then remains empty through the end."
+    },
+    {
+      "video_id": "v83b82763865a",
+      "task": "GT2",
+      "reference": "The fixed-camera view initially shows an empty paved compound. At about 49 seconds, one person gradually appears above the rear-left fence near a bench, crosses the fence, and descends into the compound. The person then walks rightward in front of the small outbuilding, turns diagonally toward the camera-side right, continues beside the larger building, and exits through the right edge of the frame. The compound remains empty for the rest of the observations."
+    },
+    {
+      "video_id": "v41696e99cef3",
+      "task": "GT2",
+      "reference": "The fixed camera shows the exterior grounds of the Korean School of Malaysia, including a curved driveway, fenced vegetation, a small utility building, a concrete apron, and parking spaces beside the main building. The area is initially empty. Around 46 seconds, one distant person wearing a light-colored top and dark trousers appears near the left fence and moves rightward toward the utility building. The person passes in front of the utility building, turns onto the concrete area, approaches diagonally, and walks through the marked parking area along the main building before exiting at the lower-right edge around 95 seconds. No other people, vehicles, or interactions are visible, and the grounds remain empty through the final frame."
+    }
+  ]
+}

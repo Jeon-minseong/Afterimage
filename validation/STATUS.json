@@ -1,0 +1,31 @@
+{
+  "API_calls_this_task": 0,
+  "API_spend_this_task_usd": 0,
+  "GT1": 303,
+  "GT2": 90,
+  "cold_verified_new_entry_point": {
+    "four_conditions_appearances": 48,
+    "hash_order_and_frame_IDs_match": true,
+    "unique_PNGs": 27,
+    "videos": 2
+  },
+  "datasets": {
+    "kisa": 90,
+    "ut_interaction": 120,
+    "weizmann": 93
+  },
+  "fresh_machine_installation_verified": false,
+  "full_303_cold_verified": false,
+  "links": {
+    "cold": "COLD_GENERATION.json",
+    "release_constraints": "../docs/RELEASE_STATUS.md",
+    "tests": "OFFLINE_TESTS.json"
+  },
+  "live_API_inference_scoring_verified": false,
+  "offline_pipeline_tests_passed": 7,
+  "protocol_finalized": false,
+  "stage": "source_release_offline_validation",
+  "two_model_requests_1_repeat": 3144,
+  "two_model_requests_3_repeats": 9432,
+  "repository": "https://github.com/Jeon-minseong/Afterimage"
+}

@@ -1,0 +1,82 @@
+{
+  "status": "candidate_not_final",
+  "models": {
+    "openai": {
+      "id": "gpt-6.1-sol",
+      "effort": "medium",
+      "image_detail": "high",
+      "max_output_tokens": 4096,
+      "usd_per_million": {
+        "input": 2,
+        "output": 10,
+        "cache_write": 2.5,
+        "cache_read": 0.1
+      }
+    },
+    "anthropic": {
+      "id": "claude-opus-5-5",
+      "effort": "medium",
+      "thinking": "adaptive",
+      "max_output_tokens": 4096,
+      "usd_per_million": {
+        "input": 4,
+        "output": 20,
+        "cache_write": 5,
+        "cache_read": 0.2
+      }
+    }
+  },
+  "prompts": {
+    "GT1_afterimage": {
+      "path": "prompts/GT1_afterimage.txt",
+      "sha256": "3a36f6054f7fce7ec3a30548db0cea5d9f45fa661191a4cebb8c4e08fd7b6a7b"
+    },
+    "GT1_frames": {
+      "path": "prompts/GT1_frames.txt",
+      "sha256": "fcf407a68a19bdbeeea58fcd0e7cac48aa783ca362df10e7ff3b4293ce3dc3da"
+    },
+    "GT2_afterimage": {
+      "path": "prompts/GT2_afterimage.txt",
+      "sha256": "776aa3b7ef328615b5cff0dda34bf22c7e04b7204a024c8a950c368a7785517e"
+    },
+    "GT2_frames": {
+      "path": "prompts/GT2_frames.txt",
+      "sha256": "e9589630d5985a030236a05249cef8d0fcbc49d0824917de14acf603bb0b7b20"
+    }
+  },
+  "repeats": 1,
+  "conditions": [
+    "uniform_observations",
+    "selected_sequence",
+    "afterimage",
+    "uniform_budget"
+  ],
+  "judge": {
+    "provider": "openai",
+    "settings": {
+      "id": "gpt-6.1-sol",
+      "effort": "low",
+      "image_detail": "high",
+      "max_output_tokens": 2048,
+      "usd_per_million": {
+        "input": 2,
+        "output": 10,
+        "cache_write": 2.5,
+        "cache_read": 0.1
+      }
+    },
+    "rubric": "prompts/judge.txt"
+  },
+  "pricing_date": "2026-10-26",
+  "pricing_sources": {
+    "gpt_model": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "gpt_vision": "https://developers.openai.com/api/docs/guides/images-vision",
+    "claude_model": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+    "claude_vision": "https://platform.claude.com/docs/en/build-with-claude/vision",
+    "openai_batch": "https://developers.openai.com/api/docs/guides/batch",
+    "claude_batch": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
+    "openai_count": "https://developers.openai.com/api/docs/guides/token-counting",
+    "claude_files": "https://platform.claude.com/docs/en/build-with-claude/files"
+  },
+  "automatic_retries": 0
+}

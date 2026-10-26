@@ -1,0 +1,53 @@
+{
+  "video_id": "v7e28bba5b470",
+  "source_sha256": "b0a2848f9ab631f84d8883e9f4de2c2caa3fbb124514a4018ce1f9323d55d114",
+  "dataset": "Weizmann Actions",
+  "source_url": "https://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html",
+  "credit": "Blank, Gorelick, Shechtman, Irani and Basri, Actions as Space-Time Shapes (ICCV 2005).",
+  "purpose": "Small research illustration, not a dataset distribution or an API input. Panels enlarged with nearest-neighbor sampling; annotations and animation added for display. Afterimage pixels come from the verified cold generation. Display timing is not original video timing.",
+  "selected_appearances": [
+    {
+      "frame_id": 3,
+      "path": "inputs/57777769061d5575678b68134bcc353d6f9bc09a39d4cee7d5c06908d1d0bbe7.png",
+      "sha256": "57777769061d5575678b68134bcc353d6f9bc09a39d4cee7d5c06908d1d0bbe7"
+    },
+    {
+      "frame_id": 6,
+      "path": "inputs/ca489353c0f5a746c46b072492da577bbfb736f290d3f019740501ee624662e2.png",
+      "sha256": "ca489353c0f5a746c46b072492da577bbfb736f290d3f019740501ee624662e2"
+    },
+    {
+      "frame_id": 18,
+      "path": "inputs/ff15f1fcd8e9c5004a823bde4835d9496fd8906c90656141e3ee4ff331585ae4.png",
+      "sha256": "ff15f1fcd8e9c5004a823bde4835d9496fd8906c90656141e3ee4ff331585ae4"
+    },
+    {
+      "frame_id": 18,
+      "path": "inputs/ff15f1fcd8e9c5004a823bde4835d9496fd8906c90656141e3ee4ff331585ae4.png",
+      "sha256": "ff15f1fcd8e9c5004a823bde4835d9496fd8906c90656141e3ee4ff331585ae4"
+    },
+    {
+      "frame_id": 30,
+      "path": "inputs/a633c3d48d053587d9bfc60197efda7b6eca12980e0855f4f6e0f5e039059ea2.png",
+      "sha256": "a633c3d48d053587d9bfc60197efda7b6eca12980e0855f4f6e0f5e039059ea2"
+    },
+    {
+      "frame_id": 39,
+      "path": "inputs/5c921f91b980d7626d200ea8960cb2c8d4c774e93c7f77d6e31b0372b05fa774.png",
+      "sha256": "5c921f91b980d7626d200ea8960cb2c8d4c774e93c7f77d6e31b0372b05fa774"
+    }
+  ],
+  "afterimages": [
+    {
+      "frame_id": null,
+      "path": "inputs/e54b3d23c1734efdffc0c0bbf544f5b70dd9a5b4b454782dff45f16a143806d8.png",
+      "sha256": "e54b3d23c1734efdffc0c0bbf544f5b70dd9a5b4b454782dff45f16a143806d8"
+    },
+    {
+      "frame_id": null,
+      "path": "inputs/896c8307d94a668eaf1221a2d37fffc9d17fe0b4359a00e44065c2924a0ab46f.png",
+      "sha256": "896c8307d94a668eaf1221a2d37fffc9d17fe0b4359a00e44065c2924a0ab46f"
+    }
+  ],
+  "gif_sha256": "91a7fab57d41fb8c2818918847107448f7855f2662fde17dd33618f8029de034"
+}

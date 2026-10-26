@@ -1,0 +1,2 @@
+# API, preparation, scoring and summaries use only Python's standard library.
+# Python >=3.10. No pip dependency is required for these stages.
