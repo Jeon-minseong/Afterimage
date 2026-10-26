@@ -11,7 +11,7 @@ for p in ROOT.rglob('*'):
     if len(rel.parts)==1 and p.name not in top:continue
     if len(rel.parts)>1 and rel.parts[0] not in folders:continue
     if any(x.lower().startswith(('.env','api_keys')) for x in rel.parts):raise ValueError('Secret file name in source allowlist')
-    if p.suffix.lower() in ('.pt','.safetensors','.mp4','.avi','.pkl','.npy'):raise ValueError('Non-source research asset in release')
+    if p.suffix.lower() in ('.pt','.safetensors','.mp4','.avi','.pkl','.npy') and rel.as_posix() != 'assets/ut_push_demo_v1.mp4':raise ValueError('Non-source research asset in release')
     data=p.read_bytes()
     if re.search(rb'(?:sk-proj-|sk-ant-api)[A-Za-z0-9_-]{20,}',data):raise ValueError('Potential credential pattern in source')
     files.append(p)

@@ -10,7 +10,7 @@ YOLO and RMBG-2.0 weights are not included. Follow upstream terms at [Ultralytic
 
 ## Data and example
 
-Weizmann, UT-interaction and KISA video sets are external. The catalog identifies benchmark files by hashes, not by a grant of redistribution rights. Obtain authorized source videos separately. The README GIF is an attributed small illustration derived from the Weizmann run example; see [its provenance](assets/PROVENANCE.json). It is resized and annotated for explanation, and is not an experimental input or a new result. No dataset-wide redistribution license is implied.
+Weizmann, UT-interaction and KISA video sets are external. The catalog identifies benchmark files by hashes, not by a grant of redistribution rights. Obtain authorized source videos separately. The README video is an attributed small illustration of UT-interaction Push; see [its provenance](assets/UT_PUSH_PROVENANCE_v1.json) and the [original dataset citation](https://cvrc.ece.utexas.edu/SDHA2010/Human_Interaction.html). The earlier Weizmann run GIF is retained with [its provenance](assets/PROVENANCE.json). It is resized and annotated for explanation, and is not an experimental input or a new result. No dataset-wide redistribution license is implied.
 
 ## New code, GT and paper
 

@@ -16,3 +16,6 @@ runs/
 *.npy
 *.lock
 dist/
+
+# Explicitly reviewed presentation video; raw dataset videos remain excluded.
+!assets/ut_push_demo_v1.mp4

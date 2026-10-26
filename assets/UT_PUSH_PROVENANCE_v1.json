@@ -1,0 +1,66 @@
+{
+  "video_id": "v81e9cbeaf312",
+  "dataset": "UT-Interaction",
+  "sequence": "UT_s01_push_01",
+  "credit": "M. S. Ryoo and J. K. Aggarwal, UT-Interaction dataset",
+  "source_sha256": "098400777fe681eea93dbb94e0beea9cedf6f41df46e51c97756b32b6791c607",
+  "source_frames": 111,
+  "source_fps": 30,
+  "M": 6,
+  "J": 2,
+  "selected_input_count": 8,
+  "afterimage_input_count": 4,
+  "afterimages": [
+    {
+      "frame_id": null,
+      "path": "inputs/c0c1952b4e1dafb90bc2e53132ac59cf8ecd2eddbcfeb064b20a0771013b6a13.png",
+      "sha256": "c0c1952b4e1dafb90bc2e53132ac59cf8ecd2eddbcfeb064b20a0771013b6a13"
+    },
+    {
+      "frame_id": null,
+      "path": "inputs/abb515c804ce464e03756e05f5984ed7ca6a667346b6ff11ba4ae5aa9e9f5dfc.png",
+      "sha256": "abb515c804ce464e03756e05f5984ed7ca6a667346b6ff11ba4ae5aa9e9f5dfc"
+    }
+  ],
+  "selected_appearances": [
+    {
+      "frame_id": 16,
+      "path": "inputs/e309ba6687f4bfe7cef3958f31488f416ab4a2e60997cd0c1092aff9e7852a62.png",
+      "sha256": "e309ba6687f4bfe7cef3958f31488f416ab4a2e60997cd0c1092aff9e7852a62"
+    },
+    {
+      "frame_id": 40,
+      "path": "inputs/c1d5c92caf51623f4ecc09f1fa98b036263e4f9d3c1f829a6f3a358f4758ea02.png",
+      "sha256": "c1d5c92caf51623f4ecc09f1fa98b036263e4f9d3c1f829a6f3a358f4758ea02"
+    },
+    {
+      "frame_id": 48,
+      "path": "inputs/36537633b563bf39e73fd86f7c0e0050d91561bfec30ddeefcf2d3012efb69c8.png",
+      "sha256": "36537633b563bf39e73fd86f7c0e0050d91561bfec30ddeefcf2d3012efb69c8"
+    },
+    {
+      "frame_id": 56,
+      "path": "inputs/ef9289db1444288f2b84630321e604341d7dd39603fad5e206034b41aaba751e.png",
+      "sha256": "ef9289db1444288f2b84630321e604341d7dd39603fad5e206034b41aaba751e"
+    },
+    {
+      "frame_id": 76,
+      "path": "inputs/10ec66ec5e26000718c8fff8340acaf80075a95e88cbb4058b4bdc33d273a103.png",
+      "sha256": "10ec66ec5e26000718c8fff8340acaf80075a95e88cbb4058b4bdc33d273a103"
+    },
+    {
+      "frame_id": 104,
+      "path": "inputs/61dc35f12f92ea34f6a60c0eaa2df025b869a4c71c2a4712f81c0f678912f55a.png",
+      "sha256": "61dc35f12f92ea34f6a60c0eaa2df025b869a4c71c2a4712f81c0f678912f55a"
+    }
+  ],
+  "transformations": "Source video is shown twice at original 30 FPS with a final two-second hold. Both complete afterimages remain visible simultaneously. Panels are resized with Lanczos; labels and H.264 encoding are presentation-only. This is not an experimental grid input, generated video, model interpretation, or quality claim. Common start/end inputs are counted but not shown separately.",
+  "mp4_sha256": "64bbdea3a180bf732430507f6c43dff3b4d85c0a2a4a9e856eb3a101ede1d028",
+  "poster_sha256": "f8ffae27084ab8e3e3d77913e4711f3a9ace7439ab408a955e1c0aa25d91d03c",
+  "duration_seconds": 9.4,
+  "audio": false,
+  "source_url": "https://cvrc.ece.utexas.edu/SDHA2010/Human_Interaction.html",
+  "citation": "Ryoo, M. S. and Aggarwal, J. K. UT-Interaction Dataset, ICPR contest on Semantic Description of Human Activities (SDHA), 2010.",
+  "github_attachment_url": "https://github.com/user-attachments/assets/0b2a896b-c771-4e6a-b6e3-baf3ce08f668",
+  "github_attachment_record": "https://github.com/Jeon-minseong/Afterimage/issues/1"
+}

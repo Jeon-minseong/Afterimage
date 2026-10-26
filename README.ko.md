@@ -2,9 +2,17 @@
 
 [English / 전체 명령 안내](README.md)
 
-![선택 프레임과 실제 잔상 비교](assets/afterimage_demo.gif)
+https://github.com/user-attachments/assets/0b2a896b-c771-4e6a-b6e3-baf3ce08f668
 
-고정 CCTV에서 주요 사건과 시간적 전개를 해석하면서 시각적 입력량을 줄이는 연구입니다. GIF는 Weizmann run의 선택 프레임 6회와 실제 잔상 2장을 비교합니다. 공통 시작·끝 2장을 더하면 입력은 각각 8장과 4장입니다. 같은 사람이 시간에 따라 여러 위치에 나타난 것이며, GIF 속도는 설명용입니다. [출처와 해시](assets/PROVENANCE.json).
+**UT-interaction Push: 원본 동작과 실제 잔상 두 장 비교.** 재생 버튼을 누르면 3.7초 원본을 원래 속도로 두 번 재생하고, 마지막 화면을 2초 유지합니다. 선택 프레임 6회가 잔상 2장으로 합성됩니다. 공통 시작·끝 원본을 포함하면 VLM 입력은 **8장 → 4장(50% 감소)**입니다.
+
+[MP4 열기·다운로드](assets/ut_push_demo_v1.mp4) · [정지 화면](assets/ut_push_poster_v1.jpg) · [입력 해시와 표시 변환 기록](assets/UT_PUSH_PROVENANCE_v1.json)
+
+오른쪽 잔상 두 장을 함께 배치한 것은 설명용입니다. 실제 API에는 순서가 정해진 개별 이미지를 전달하며, 시작·끝 원본은 입력 수에 포함하지만 이 화면에 따로 표시하지 않습니다. 이 영상은 모델의 해석 결과나 정확도 검증 결과가 아닙니다.
+
+출처: M. S. Ryoo, J. K. Aggarwal, [UT-Interaction Dataset, ICPR SDHA contest (2010)](https://cvrc.ece.utexas.edu/SDHA2010/Human_Interaction.html). 기존 Weizmann GIF와 출처 기록도 `assets/`에 보존했습니다.
+
+고정 CCTV에서 주요 사건과 시간적 전개를 해석하면서 시각적 입력량을 줄이는 연구입니다.
 
 ## 제공하는 내용
 

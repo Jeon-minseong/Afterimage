@@ -2,11 +2,15 @@
 
 [한국어 안내](README.ko.md) · [Run the pipeline](#1-environment) · [Verification](#verification-status) · [Schemas](docs/SCHEMA.md)
 
-![Selected video frames and their generated afterimages](assets/afterimage_demo.gif)
+https://github.com/user-attachments/assets/0b2a896b-c771-4e6a-b6e3-baf3ce08f668
 
-**Six selected frame appearances become two afterimages.** Including the same first and last originals, this example uses **8 vs 4 input images**. Repeated silhouettes represent the same person at different instants. The animation presents preserved selected frames beside the actual composites; it does not show continuous reconstruction or a VLM result. Frame 18 occurs twice by design. Display timing is illustrative.
+**UT-interaction Push: source video beside two actual afterimages.** Press play to compare the motion with the preserved composites. The 3.7-second source clip plays twice at its original speed, followed by a two-second hold. Six selected frame appearances become two afterimages; including the same first and last originals, the VLM inputs are **8 vs 4 images (50% fewer)**.
 
-*Example: Weizmann Actions, run sequence. Credit: Blank, Gorelick, Shechtman, Irani and Basri, [Actions as Space-Time Shapes](https://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html), ICCV 2005. [Exact example hashes and transformations](assets/PROVENANCE.json). Source footage remains under its original rights; this small illustration does not license redistribution of the dataset.*
+[Open/download the MP4](assets/ut_push_demo_v1.mp4) · [Still preview](assets/ut_push_poster_v1.jpg) · [Exact hashes and presentation transformations](assets/UT_PUSH_PROVENANCE_v1.json)
+
+The right-hand panels show both complete afterimages for inspection. This presentation layout is not sent to the VLM: the experiment uses separate, ordered images. Common start/end inputs are counted but not displayed separately. This illustration is not a model response or evidence of interpretation accuracy.
+
+*Credit: M. S. Ryoo and J. K. Aggarwal, [UT-Interaction Dataset, ICPR SDHA contest (2010)](https://cvrc.ece.utexas.edu/SDHA2010/Human_Interaction.html). Source material remains under its original rights. The earlier Weizmann GIF and its provenance remain in `assets/`.*
 
 ## Research in brief
 
