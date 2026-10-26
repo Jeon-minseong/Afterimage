@@ -195,11 +195,44 @@ python -m afterimage metrics --inputs runs/inputs --answers runs/answers --score
 
 The first command requires OpenCV in the generation environment. It matches source hashes and reads container frame-count metadata; it does not audit every decoded frame. The second command uses the standard library, verifies input/result hashes and score-to-answer linkage, and makes no API calls. Omit `--frame-counts` to leave original-frame ratios empty; omit `--scores` for usage-only analysis. Outputs are `input_counts.csv`, `individual_usage_scores.csv`, `paired_comparisons.csv` and `summary.json`. Ratios are `1-M/N`, `1-J/M` and `1-(J+2)/(M+2)`. Each video is counted once in dataset totals; pooled ratios and per-video average ratios are separate. Total input tokens include prompts, JSON schema and images, and are not image-only tokens. The paired table compares afterimages both to selected frames and to equal-image-count uniform frames within each repeat. No original-all-frames API baseline or statistical significance is inferred.
 
+## Batch execution
+
+Batch processing keeps each video/task/condition/repeat as a separate request. It uses the same frozen plan, model, prompt, image bytes and image order. The execution mode and 50% Batch token rates are recorded separately. Batch delivery does not guarantee identical generated text. Results are joined by `custom_id`, never by their returned line order.
+
+After preparing an inference plan, prepare one pack per provider. This command **calls the provider's token-count endpoint**, but submits no paid generation. It writes exact inline PNG bytes and divides requests into files of at most 24 MB and 64 requests; it never splits one video's inference sequence. Use a separate small pilot plan first.
+
+```powershell
+python -m afterimage prepare-batch --plan runs/inference_plan --inputs runs/inputs --provider openai --out runs/batch_openai
+python -m afterimage prepare-batch --plan runs/inference_plan --inputs runs/inputs --provider anthropic --out runs/batch_claude
+python -m afterimage submit-batch --pack runs/batch_openai --ledger runs/budget.json --budget 1
+```
+
+The last command is a local dry run. Initialize a new shared ledger as `{"requests":{},"uploads":{}}` only for a genuinely new budget account; preserve and reuse an existing ledger for later runs. After reviewing the printed pack hash and reservation, add `--execute --approve-pack PACK_HASH` to submit. Repeat for the Claude pack with its own hash. The ledger reserves counted input with a margin plus maximum output for **every submitted request**, including concurrent batches. Pending reservations remain part of cumulative provider exposure. A submission with an unknown outcome is never automatically repeated.
+
+Collect results later, using the same answer output directory for the two provider packs:
+
+```powershell
+python -m afterimage collect-batch --pack runs/batch_openai --plan runs/inference_plan --inputs runs/inputs --out runs/batch_answers --ledger runs/budget.json
+python -m afterimage collect-batch --pack runs/batch_claude --plan runs/inference_plan --inputs runs/inputs --out runs/batch_answers --ledger runs/budget.json
+```
+
+Collection can be repeated without resubmitting generation. Keep the pack files, submission receipts, raw results and ledger. Missing, failed and invalid responses remain visible; do not replace them with invented descriptions or silently retry them. Saved answers use the same per-video schema as ordinary inference, so separate GT scoring and metrics export work unchanged. A scoring plan can also be packed without `--inputs`.
+
+To collect all already-submitted packs automatically while the local process stays running:
+
+```powershell
+python -m afterimage watch-batches --packs runs/batch_openai runs/batch_claude --plan runs/inference_plan --inputs runs/inputs --out runs/batch_answers --ledger runs/budget.json --interval 60 --hours 25
+```
+
+This watcher never submits new generation. `watch_status.json` distinguishes processing, completed, needs-review and deadline states. The local computer must remain running to collect results; provider-side processing continues independently once a batch has been accepted.
+
+Batch operations may take up to the provider's 24-hour processing window. Large inputs still need explicit transport verification; batching does not solve per-request limits. Sources: [OpenAI Batch](https://developers.openai.com/api/docs/guides/batch), [Claude Message Batches](https://platform.claude.com/docs/en/build-with-claude/batch-processing).
+
 ## Resuming and accounting
 
 Rerun the identical plan/output/ledger command to skip completed records after checking their hashes. Requests are sequential. No automatic retries occur. A timeout, invalid output, unexpected model/tier or exceeded reservation stops execution. An unresolved request keeps its budget reservation and blocks subsequent execution until its outcome is reconciled; do not delete the ledger to bypass it.
 
-The program reserves counted input plus a margin and maximum output before generation. API token counting is an estimate and tariffs can change, so this is not a provider-enforced billing cap. It does not include unrelated applications' spend. Current rates and pricing sources are frozen in `configs/experiment.json`. No Batch submission is implemented. Local subscription-app usage and historical Codex CLI results are not API results.
+The program reserves counted input plus a margin and maximum output before generation. API token counting is an estimate and tariffs can change, so this is not a provider-enforced billing cap. It does not include unrelated applications' spend. Current rates and pricing sources are frozen in `configs/experiment.json`. Local subscription-app usage and historical Codex CLI results are not API results.
 
 ## Verification status
 
