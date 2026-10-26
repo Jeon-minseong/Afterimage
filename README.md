@@ -25,7 +25,7 @@ flowchart LR
     S --> T[Individual scores + averages]
 ```
 
-**Status:** three-video live diagnostic completed: 32 descriptions and 32 scores, both models and four conditions. The full three-repeat experiment has not started: the sequential Claude estimate exceeds the $100 provider budget, and large-input transport needs further verification. No API calls are made by the default workflow. Generation is currently validated on Windows/CUDA; two cold-generated videos match all four existing conditions. This is not a 303-video cold verification or a fresh-machine validation.
+**Status:** three-video live diagnostic completed: 32 descriptions and 32 scores, both models and four conditions. The full 303-video three-repeat benchmark is not complete. The Weizmann GT1 batch workflow has been initiated with a separate eight-request technical pilot before the main three-repeat stage; see the time-stamped [batch status snapshot](validation/BATCH_STATUS.json). No API calls are made by the default workflow. Generation is currently validated on Windows/CUDA; two cold-generated videos match all four existing conditions. This is not a 303-video cold verification or a fresh-machine validation.
 
 ## Reproduce the workflow
 
@@ -238,7 +238,7 @@ The program reserves counted input plus a margin and maximum output before gener
 
 See [validation records](validation/STATUS.json). The new directory-based generator was tested cold on Weizmann run and UT push videos; all four conditions matched the existing inputs (48 appearances, 27 unique PNGs). Offline tests exercise inference → per-video records → GT-only scoring → CSV/averages, hash failures, budgets, repeats and resume, without real API traffic.
 
-The [live diagnostic record](validation/LIVE_SMOKE.json) covers Weizmann run, UT push and KISA parking: 32 schema-valid descriptions and 32 separate GPT-judge scores, with $0.500936 normal diagnostic cost. It contains observed interpretation errors and is not a quality pass or held-out evaluation. Eleven offline tests pass, including exact-byte transport, duplicate order, JSON parsing, budgets, resume and score-to-answer integrity. Metrics export was also checked on all 303 frozen input manifests and the 32 diagnostic answer/score pairs.
+The [live diagnostic record](validation/LIVE_SMOKE.json) covers Weizmann run, UT push and KISA parking: 32 schema-valid descriptions and 32 separate GPT-judge scores, with $0.500936 normal diagnostic cost. It contains observed interpretation errors and is not a quality pass or held-out evaluation. Sixteen offline tests pass, including batch collection and budget reservations as well as exact-byte transport, duplicate order, JSON parsing, budgets, resume and score-to-answer integrity. Metrics export was also checked on all 303 frozen input manifests and the 32 diagnostic answer/score pairs.
 
 This package has **not** completed a fresh installation on another PC, a 303-video cold run, the full three-repeat API experiment, or large-input live transport validation. Earlier project verification established 303 selection replays and three cold-generated examples; those are different verification scopes. The final experiment protocol, author-code license, and exact external dataset/weight acquisition arrangements remain to be finalized. Publication of source files does not establish completion of those tasks.
 
