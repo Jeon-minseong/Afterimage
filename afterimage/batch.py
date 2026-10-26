@@ -49,12 +49,20 @@ def inline_payload(job, prompt, settings, inputs):
     return body
 
 
-def prepare(plan, inputs, out, provider, adapter=None, max_bytes=24_000_000, max_requests=64):
+def prepare(plan, inputs, out, provider, adapter=None, max_bytes=24_000_000, max_requests=64, job_ids=None):
     plan, inputs = Path(plan), Path(inputs) if inputs else None
     record, config, jobs = load_plan(plan, inputs)
     jobs = [j for j in jobs if j['provider']==provider]
+    if job_ids is not None:
+        selected=set(job_ids)
+        check(len(selected)==len(job_ids), 'Duplicate selected job IDs')
+        jobs=[j for j in jobs if j['job_id'] in selected]
+        check({j['job_id'] for j in jobs}==selected, 'Unknown selected job IDs')
     check(jobs, 'No requests for provider')
-    check(100_000 <= max_bytes <= 24_000_000 and 1 <= max_requests <= 1000, 'Unsafe chunk limits')
+    # Claude Message Batches accepts 256 MB; token counting remains limited to
+    # 24 MB chunks inside Remote.count. No inference image is removed or split.
+    limit_bytes=240_000_000 if provider=='anthropic' else 24_000_000
+    check(100_000 <= max_bytes <= limit_bytes and 1 <= max_requests <= 1000, 'Unsafe chunk limits')
     out = fresh(out);remote = adapter or BatchRemote([provider]);cache={};parts=[];entries=[];lines=[];size=0
     def save_part():
         if not lines:return
@@ -69,8 +77,9 @@ def prepare(plan, inputs, out, provider, adapter=None, max_bytes=24_000_000, max
         body=inline_payload(job,prompt,settings,inputs)
         payload_hash=digest(body)
         if payload_hash not in cache:
-            cache[payload_hash]=remote.count(provider,body)
-        count=cache[payload_hash]
+            count=remote.count(provider,body)
+            cache[payload_hash]=(count,copy.deepcopy(getattr(remote,'last_count_metadata',{})))
+        count,count_metadata=cache[payload_hash]
         custom_id='j'+digest({'plan':record['plan_sha256'],'job':job['job_id']})[:40]
         request=({'custom_id':custom_id,'method':'POST','url':'/v1/responses','body':body}
                  if provider=='openai' else {'custom_id':custom_id,'params':body})
@@ -79,6 +88,7 @@ def prepare(plan, inputs, out, provider, adapter=None, max_bytes=24_000_000, max
         if lines and (size+len(line)+1024>max_bytes or len(lines)>=max_requests):
             save_part();entries=[];lines=[];size=0
         entries.append({'job_id':job['job_id'],'custom_id':custom_id,'payload_sha256':payload_hash,'input_tokens_count':count,
+                        'count_metadata':count_metadata,
                         'reserved_usd':reserve_cost(provider,count,settings)*.5})
         lines.append(line);size+=len(line)
         if (n+1)%32==0:print(json.dumps({'event':'batch_prepared','provider':provider,'requests':n+1,'total':len(jobs)}),flush=True)

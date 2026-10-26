@@ -1,1 +1,35 @@
-{"GT1":303,"GT2":90,"cold_verified_new_entry_point":{"four_conditions_appearances":48,"hash_order_and_frame_IDs_match":true,"unique_PNGs":27,"videos":2},"datasets":{"kisa":90,"ut_interaction":120,"weizmann":93},"fresh_machine_installation_verified":false,"full_303_cold_verified":false,"full_three_repeat_API_experiment_completed":false,"links":{"batch":"BATCH_STATUS.json","batch_tests":"OFFLINE_TESTS_BATCH.json","cold":"COLD_GENERATION.json","live_diagnostic":"LIVE_SMOKE.json","release_constraints":"../docs/RELEASE_STATUS.md","subscription":"SUBSCRIPTION_STATUS_v1.json","tests":"OFFLINE_TESTS.json"},"live_API_inference_scoring_verified":true,"offline_pipeline_tests_passed":21,"protocol_finalized":false,"repository":"https://github.com/Jeon-minseong/Afterimage","stage":"GPT_subscription_main_started_Claude_Weizmann_API_interpretation_complete","two_model_requests_1_repeat":3144,"two_model_requests_3_repeats":9432}
+{
+  "GT1": 303,
+  "GT2": 90,
+  "cold_verified_new_entry_point": {
+    "four_conditions_appearances": 48,
+    "hash_order_and_frame_IDs_match": true,
+    "unique_PNGs": 27,
+    "videos": 2
+  },
+  "datasets": {
+    "kisa": 90,
+    "ut_interaction": 120,
+    "weizmann": 93
+  },
+  "fresh_machine_installation_verified": false,
+  "full_303_cold_verified": false,
+  "full_three_repeat_API_experiment_completed": false,
+  "links": {
+    "batch": "BATCH_STATUS.json",
+    "batch_tests": "OFFLINE_TESTS_BATCH.json",
+    "cold": "COLD_GENERATION.json",
+    "live_diagnostic": "LIVE_SMOKE.json",
+    "release_constraints": "../docs/RELEASE_STATUS.md",
+    "subscription": "SUBSCRIPTION_STATUS_v1.json",
+    "tests": "OFFLINE_TESTS.json",
+    "large_input_batches": "../docs/BATCH_LARGE_INPUTS.md"
+  },
+  "live_API_inference_scoring_verified": true,
+  "offline_pipeline_tests_passed": 23,
+  "protocol_finalized": false,
+  "repository": "https://github.com/Jeon-minseong/Afterimage",
+  "stage": "GPT_subscription_running_Claude_Weizmann_complete_remaining_continuation_started",
+  "two_model_requests_1_repeat": 3144,
+  "two_model_requests_3_repeats": 9432
+}

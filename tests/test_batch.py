@@ -80,5 +80,29 @@ class BatchTest(unittest.TestCase):
         self.assertEqual(result['status'],'completed');self.assertEqual(result['completed_requests'],48)
         self.assertEqual(before,fake.submissions)
 
+    def test_subset_packs_share_plan_without_duplicate_submission(self):
+        jobs=[json.loads(x) for x in (self.f.plan/'requests.jsonl').read_text(encoding='utf-8').splitlines()]
+        ids=[j['job_id'] for j in jobs if j['provider']=='anthropic']
+        fake=FakeBatch()
+        for n, subset in enumerate([ids[:12],ids[12:]]):
+            pack=self.f.root/('subset'+str(n))
+            meta=batch.prepare(self.f.plan,self.f.data,pack,'anthropic',adapter=fake,job_ids=subset,max_bytes=240_000_000)
+            self.assertEqual(meta['requests'],12)
+            batch.submit(pack,self.f.ledger,100,meta['pack_sha256'],adapter=fake)
+            result=batch.collect(pack,self.f.plan,self.f.data,self.f.answers,self.f.ledger,adapter=fake)
+            self.assertEqual(result['issues'],0)
+        self.assertEqual(read(self.f.answers/'index.json')['completed_requests'],24)
+        overlap=self.f.root/'overlap'
+        meta=batch.prepare(self.f.plan,self.f.data,overlap,'anthropic',adapter=fake,job_ids=ids[:1])
+        with self.assertRaisesRegex(ValueError,'already reserved'):
+            batch.submit(overlap,self.f.ledger,100,meta['pack_sha256'],adapter=fake)
+
+    def test_unknown_subset_and_provider_specific_size_rejected(self):
+        fake=FakeBatch()
+        with self.assertRaisesRegex(ValueError,'Unknown selected'):
+            batch.prepare(self.f.plan,self.f.data,self.f.root/'bad','anthropic',adapter=fake,job_ids=['unknown'])
+        with self.assertRaisesRegex(ValueError,'Unsafe chunk'):
+            batch.prepare(self.f.plan,self.f.data,self.f.root/'big','openai',adapter=fake,max_bytes=240_000_000)
+
 
 if __name__=='__main__':unittest.main()

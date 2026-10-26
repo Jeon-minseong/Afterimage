@@ -1,0 +1,19 @@
+{
+  "snapshot_kst": "2026-10-26T14:45:03.457483+09:00",
+  "remaining_requests": 3600,
+  "previous_weizmann_complete": 1116,
+  "submitted_at_snapshot": 48,
+  "completed_at_snapshot": 0,
+  "phase_at_snapshot": "preparing_pack",
+  "plan_sha256": "942539e721793e3e70253bc63131f1d8b3fdabe0c240172b757132f7745bfdaa",
+  "scope": {
+    "UT_GT1": 1440,
+    "KISA_GT1": 1080,
+    "KISA_GT2": 1080
+  },
+  "cap_usd_including_prior_and_pending": 100,
+  "offline_tests_passed": 23,
+  "large_KISA_response_gate": true,
+  "input_transformations": false,
+  "scoring_started": false
+}
