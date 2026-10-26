@@ -25,7 +25,7 @@ flowchart LR
     S --> T[Individual scores + averages]
 ```
 
-**Status:** source release and local verification; final API protocol pending. No API calls are made by the default workflow. Generation is currently validated on Windows/CUDA; two cold-generated videos match all four existing conditions. This is not a 303-video cold verification or a fresh-machine validation.
+**Status:** three-video live diagnostic completed: 32 descriptions and 32 scores, both models and four conditions. The full three-repeat experiment has not started: the sequential Claude estimate exceeds the $100 provider budget, and large-input transport needs further verification. No API calls are made by the default workflow. Generation is currently validated on Windows/CUDA; two cold-generated videos match all four existing conditions. This is not a 303-video cold verification or a fresh-machine validation.
 
 ## Reproduce the workflow
 
@@ -49,6 +49,7 @@ afterimage/
   engine/           # preserved generation implementation and pinned YOLO source
   providers.py      # OpenAI / Claude HTTP adapters; keys come from environment
   experiment.py     # request plans, inference, independent scoring, aggregation
+  metrics.py        # ordered input counts, measured tokens, paired score comparisons
   __main__.py       # command-line interface
 configs/
   experiment.json   # proposed model/settings and prompt hashes
@@ -134,7 +135,7 @@ python -m afterimage run --plan runs/inference_plan --inputs runs/inputs --out r
 
 The final command is a dry run. It prints the plan hash and request count. A full matching dataset gives 1,572 requests per model per repeat (GT1: 1,212; GT2: 360). Two models require 3,144 or 9,432 requests for 1 or 3 repeats. `--repeats 3` creates all three independent repeats; decide this before execution. A new plan hash is a distinct experiment and does not silently reuse another plan's responses.
 
-The default candidate settings are GPT-6.1 Sol / Claude Opus 5.5, medium, maximum 4,096 billable output tokens including reasoning. GT1/GT2 afterimage prompts preserve the tested v3 text. Frame guidance and the judge rubric are proposed versions. No GT, class-bearing video name, past answer or previous conversation is sent for inference. Model IDs may be aliases; requested and returned IDs are retained.
+The diagnostic settings are GPT-6.1 Sol / Claude Opus 5.5, medium, maximum 4,096 billable output tokens including reasoning, with `structured_output: true`. The API JSON schema enforces the output fields; it does not make the interpretation correct. GT1/GT2 afterimage prompts preserve the tested v3 text. Frame guidance and the judge rubric are diagnostic versions; confirmatory use remains pending. No GT, class-bearing video name, past answer or previous conversation is sent for inference. Model IDs may be aliases; requested and returned IDs are retained.
 
 ## 5. Generate VLM answers (paid; explicit opt-in)
 
@@ -146,7 +147,9 @@ Only after reviewing the plan, repeat the command with the exact printed plan ha
 python -m afterimage run --plan runs/inference_plan --inputs runs/inputs --out runs/answers --ledger runs/budget.json --execute --approve-plan REVIEWED_PLAN_HASH --budget-openai 1 --budget-anthropic 1
 ```
 
-The $1 figures are example **diagnostic caps**, not estimated costs for the full experiment. Change them only after reviewing the plan and budget; this research release accepts up to $100 per provider. Files upload unchanged with opaque hash filenames and repeat file references remain in the requested order. No resizing, grid conversion or input deduplication is performed by the API layer.
+The $1 figures are example **diagnostic caps**, not estimated costs for the full experiment. Change them only after reviewing the plan and budget; this research release accepts up to $100 per provider. OpenAI defaults to inline PNG bytes; Claude uses uploaded files with opaque hash filenames. Both preserve exact bytes, order and duplicate appearances. No resizing, grid conversion or input deduplication is performed by the API layer.
+
+For large OpenAI inputs, `image_transport: "files"` uses the Files API with `purpose=user_data`. One file-backed inference succeeded, but later uploads repeatedly returned HTTP 503. This is an unresolved transport constraint, not evidence of visual interpretation failure. Claude token counting embeds the same PNG bytes because its counting endpoint rejects file IDs. Large count-only requests are split and conservatively summed with repeated prompt overhead; inference still sends the entire ordered sequence in one request. The largest inputs have not yet passed live transport validation. Do not start the full benchmark based only on the small diagnostic.
 
 Each result is linked to its video:
 
@@ -183,6 +186,15 @@ python -m afterimage summarize --scores runs/scores --out runs/tables
 
 Outputs are `individual_scores.csv` and `summary.json`. Rows retain video/task/condition/model/repeat. Means first average available repeats per video, then videos. GT1, GT2 and datasets remain separate; missing results and human-review flags are visible. This descriptive summary does not perform significance tests or claim human review complete.
 
+Export image counts, actual total input/output tokens, costs and score comparisons using the same frozen inputs and saved responses:
+
+```powershell
+python tools/collect_frame_metadata.py --videos C:\datasets\afterimage --inputs runs/inputs --out runs/frame_counts.csv
+python -m afterimage metrics --inputs runs/inputs --answers runs/answers --scores runs/scores --frame-counts runs/frame_counts.csv --out runs/paper_tables
+```
+
+The first command requires OpenCV in the generation environment. It matches source hashes and reads container frame-count metadata; it does not audit every decoded frame. The second command uses the standard library, verifies input/result hashes and score-to-answer linkage, and makes no API calls. Omit `--frame-counts` to leave original-frame ratios empty; omit `--scores` for usage-only analysis. Outputs are `input_counts.csv`, `individual_usage_scores.csv`, `paired_comparisons.csv` and `summary.json`. Ratios are `1-M/N`, `1-J/M` and `1-(J+2)/(M+2)`. Each video is counted once in dataset totals; pooled ratios and per-video average ratios are separate. Total input tokens include prompts, JSON schema and images, and are not image-only tokens. The paired table compares afterimages both to selected frames and to equal-image-count uniform frames within each repeat. No original-all-frames API baseline or statistical significance is inferred.
+
 ## Resuming and accounting
 
 Rerun the identical plan/output/ledger command to skip completed records after checking their hashes. Requests are sequential. No automatic retries occur. A timeout, invalid output, unexpected model/tier or exceeded reservation stops execution. An unresolved request keeps its budget reservation and blocks subsequent execution until its outcome is reconciled; do not delete the ledger to bypass it.
@@ -193,7 +205,9 @@ The program reserves counted input plus a margin and maximum output before gener
 
 See [validation records](validation/STATUS.json). The new directory-based generator was tested cold on Weizmann run and UT push videos; all four conditions matched the existing inputs (48 appearances, 27 unique PNGs). Offline tests exercise inference → per-video records → GT-only scoring → CSV/averages, hash failures, budgets, repeats and resume, without real API traffic.
 
-This package has **not** completed a fresh installation on another PC, a 303-video cold run, or live inference/scoring through this new package. Earlier project verification established 303 selection replays and three cold-generated examples; those are different verification scopes. The final experiment protocol, author-code license, and exact external dataset/weight acquisition arrangements remain to be finalized. Publication of source files does not establish completion of those tasks.
+The [live diagnostic record](validation/LIVE_SMOKE.json) covers Weizmann run, UT push and KISA parking: 32 schema-valid descriptions and 32 separate GPT-judge scores, with $0.500936 normal diagnostic cost. It contains observed interpretation errors and is not a quality pass or held-out evaluation. Eleven offline tests pass, including exact-byte transport, duplicate order, JSON parsing, budgets, resume and score-to-answer integrity. Metrics export was also checked on all 303 frozen input manifests and the 32 diagnostic answer/score pairs.
+
+This package has **not** completed a fresh installation on another PC, a 303-video cold run, the full three-repeat API experiment, or large-input live transport validation. Earlier project verification established 303 selection replays and three cold-generated examples; those are different verification scopes. The final experiment protocol, author-code license, and exact external dataset/weight acquisition arrangements remain to be finalized. Publication of source files does not establish completion of those tasks.
 
 ## License and attribution
 

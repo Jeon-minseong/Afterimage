@@ -41,6 +41,18 @@ class PipelineTest(unittest.TestCase):
         result=e.summarize(scores,self.root/'summary');self.assertEqual(result['individual_scores'],16)
         self.assertTrue(all(g['mean_score']==4 for g in read(self.root/'summary/summary.json')['groups']))
         self.assertGreater(r['cumulative_usd']['openai'],.05)
+        from afterimage.metrics import export
+        metrics = self.root/'metrics'
+        self.assertEqual(export(self.data,self.answers,metrics,scores=scores)['scores'],16)
+        measured=read(metrics/'summary.json')
+        self.assertEqual(measured['counts'][0]['pooled_VLM_input_reduction'],.25)
+        self.assertIsNone(measured['counts'][0]['N'])
+        # A validly hashed score file must still refer to the exact answer bytes.
+        idx=read(scores/'index.json');item=idx['items'][0];path=scores/item['path'];bad=read(path)
+        bad['request']['candidate_record_sha256']='another-answer';write(path,bad)
+        item['sha256']=sha(path);write(scores/'index.json',idx)
+        with self.assertRaisesRegex(ValueError,'different answer'):
+            export(self.data,self.answers,self.root/'bad_metrics',scores=scores)
     def test_dry_run_no_credentials_or_provider(self):
         self.prep()
         with patch.object(e,'Remote',side_effect=AssertionError('Provider must not initialize')):

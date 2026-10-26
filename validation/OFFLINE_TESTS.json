@@ -1,1 +1,18 @@
-{"log":"test_budget_no_inference (test_pipeline.PipelineTest.test_budget_no_inference) ... ok\ntest_changed_input_blocked (test_pipeline.PipelineTest.test_changed_input_blocked) ... ok\ntest_dry_run_no_credentials_or_provider (test_pipeline.PipelineTest.test_dry_run_no_credentials_or_provider) ... ok\ntest_end_to_end_inference_grade_aggregate_and_resume (test_pipeline.PipelineTest.test_end_to_end_inference_grade_aggregate_and_resume) ... ok\ntest_missing_gt_stops_before_scoring (test_pipeline.PipelineTest.test_missing_gt_stops_before_scoring) ... ok\ntest_repeat_jobs_not_deduplicated (test_pipeline.PipelineTest.test_repeat_jobs_not_deduplicated) ... ok\ntest_unknown_not_retried (test_pipeline.PipelineTest.test_unknown_not_retried) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 3.303s\n\nOK\n","network_sockets_blocked_in_tests":true,"passed":true,"python":"3.13.5","real_API_calls":0,"tests":7}
+{
+  "tests": 11,
+  "passed": true,
+  "real_API_calls": 0,
+  "run_date": "2026-10-26",
+  "network_sockets_blocked_in_pipeline_tests": true,
+  "transport_tests_use_local_mocks": true,
+  "coverage": [
+    "inference to score to metrics with answer-hash binding",
+    "budgets and unknown outcomes",
+    "repeat/resume",
+    "exact bytes and duplicate order",
+    "count-only chunking",
+    "strict JSON fence handling"
+  ],
+  "command": "python -m unittest discover -s tests -v",
+  "prior_record": "OFFLINE_TESTS_BASELINE.json"
+}

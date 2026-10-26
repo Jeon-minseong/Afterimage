@@ -12,6 +12,7 @@ def main():
     s=sub.add_parser('prepare-scoring');s.add_argument('--answers',required=True,type=Path);s.add_argument('--gt',type=Path,default=PACKAGE/'gt/references.json');s.add_argument('--out',required=True,type=Path);s.add_argument('--config',type=Path,default=PACKAGE/'configs/experiment.json');s.add_argument('--allow-partial',action='store_true')
     r=sub.add_parser('run');r.add_argument('--plan',required=True,type=Path);r.add_argument('--inputs',type=Path);r.add_argument('--out',required=True,type=Path);r.add_argument('--ledger',type=Path,default=PACKAGE/'runs/budget.json');r.add_argument('--execute',action='store_true');r.add_argument('--approve-plan');r.add_argument('--budget-openai',type=float,default=0);r.add_argument('--budget-anthropic',type=float,default=0)
     t=sub.add_parser('summarize');t.add_argument('--scores',required=True,type=Path);t.add_argument('--out',required=True,type=Path)
+    m=sub.add_parser('metrics');m.add_argument('--inputs',required=True,type=Path);m.add_argument('--answers',required=True,type=Path);m.add_argument('--scores',type=Path);m.add_argument('--frame-counts',type=Path);m.add_argument('--out',required=True,type=Path)
     args=vars(p.parse_args());command=args.pop('command')
     if command=='generate':
         from .generate import generate
@@ -22,6 +23,9 @@ def main():
     elif command=='validate':
         from .common import validate_inputs
         result=validate_inputs(args['inputs'])[1]
+    elif command=='metrics':
+        from .metrics import export
+        result=export(**args)
     else:
         from . import experiment as e
         if command=='prepare-inference':args['config_path']=args.pop('config');result=e.prepare(**args)

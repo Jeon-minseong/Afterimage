@@ -3,7 +3,7 @@ import csv,datetime,json,os,shutil,statistics
 from collections import defaultdict
 from pathlib import Path
 from .common import PACKAGE,CONDITIONS,check,read,write,sha,canonical,digest,safe,fresh,validate_inputs,pricing_cost
-from .providers import Remote,make_payload,parse_response,reserve_cost
+from .providers import Remote,make_payload,parse_response,reserve_cost,json_output
 
 def finish_plan(out,config,jobs,kind,extra):
     write(out/'config.json',config)
@@ -75,7 +75,7 @@ def load_plan(path,inputs=None):
 
 def parse_score(provider,raw,rates):
     parsed=parse_response(provider,raw,'GT2',rates)
-    text=parsed['description_raw'];data=json.loads(text)
+    text=parsed['description_raw'];data=json.loads(json_output(text)[0])
     check(set(data)=={'score','reason','needs_human_review'},'Score output fields differ')
     check(type(data['score']) is int and 0<=data['score']<=5 and isinstance(data['reason'],str) and type(data['needs_human_review']) is bool,'Invalid score')
     ended=raw.get('status')=='completed' if provider=='openai' else raw.get('stop_reason')=='end_turn'
@@ -94,7 +94,7 @@ def execute(plan,inputs,out,ledger_path,caps,approved_sha=None,adapter=None):
     with lock.open('x') as f:f.write(str(os.getpid()))
     try:
         ledger=read(ledger_path) if ledger_path.exists() else {'requests':{},'uploads':{}}
-        check(all(e['status']=='completed' for e in ledger['requests'].values()),'Unresolved ledger entry: reconcile before resuming')
+        check(all(e['status'] in ('completed','reviewed_invalid') for e in ledger['requests'].values()),'Unresolved ledger entry: reconcile before resuming')
         exposure=lambda p:sum(e.get('cost_usd',e.get('reserved_usd',0)) for e in ledger['requests'].values() if e['provider']==p)
         check(all(exposure(p)<=caps[p] for p in providers),'Previous cumulative cost exceeds cap')
         if (out/'run.json').exists():check(read(out/'run.json')['plan_sha256']==approved_sha,'Output belongs to another plan')
@@ -106,20 +106,27 @@ def execute(plan,inputs,out,ledger_path,caps,approved_sha=None,adapter=None):
             key=approved_sha+':'+j['job_id'];provider=j['provider'];s=config['models'][provider] if j['kind']=='inference' else config['judge']['settings']
             target=out/'videos'/j['video_id']/(j['job_id']+'.json')
             if key in ledger['requests']:
-                e=ledger['requests'][key];check(e['result_path']==str(target) and sha(target)==e['result_sha256'],'Completed result missing/changed or output path differs');continue
+                e=ledger['requests'][key];check(e['status']=='completed','Prior output invalid; use an explicitly reviewed new plan, never silently retry')
+                check(e['result_path']==str(target) and sha(target)==e['result_sha256'],'Completed result missing/changed or output path differs');continue
             p=safe(plan,j['prompt_path']);check(sha(p)==j['prompt_sha256'],'Prompt changed')
             prompt=p.read_text(encoding='utf-8-sig');file_ids=[]
+            file_mode=provider=='openai' and s.get('image_transport')=='files'
+            if hasattr(adapter,'openai_file_mode'):adapter.openai_file_mode=file_mode
             for i in j['images']:
                 image=safe(inputs,i['path']);check(sha(image)==i['sha256'],'Input changed')
-                uploadkey=provider+':'+i['sha256']
+                uploadkey=provider+(':files:' if file_mode else ':')+i['sha256']
                 if uploadkey not in ledger['uploads']:
                     ledger['uploads'][uploadkey]=adapter.upload(provider,image,i['sha256']);write(ledger_path,ledger)
                 file_ids.append(ledger['uploads'][uploadkey])
+                if hasattr(adapter,'bind_file'):adapter.bind_file(provider,file_ids[-1],image)
             if j['kind']=='scoring':prompt+='\n\nREFERENCE AND CANDIDATE DATA:\n'+j['grading_data']
-            payload=make_payload(j,prompt,s,file_ids);count=adapter.count(provider,payload);reserve=reserve_cost(provider,count,s)
+            payload=make_payload(j,prompt,s,file_ids)
+            if hasattr(adapter,'materialize'):payload=adapter.materialize(provider,payload)
+            count=adapter.count(provider,payload);reserve=reserve_cost(provider,count,s)
             if exposure(provider)+reserve>caps[provider]:
                 export_index(out,jobs,record['kind']);return {'status':'budget_stopped','next_job':j['job_id'],'cumulative_usd':{p:exposure(p) for p in providers}}
             e={'status':'unknown','provider':provider,'reserved_usd':reserve,'job_sha256':j['job_sha256'],'payload_sha256':digest(payload),'count_input_tokens':count}
+            if hasattr(adapter,'last_count_metadata'):e['count_metadata']=adapter.last_count_metadata
             ledger['requests'][key]=e;write(ledger_path,ledger)
             try:
                 raw,rid=adapter.infer(provider,payload)

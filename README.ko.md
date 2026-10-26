@@ -81,8 +81,19 @@ python -m afterimage summarize --scores runs/scores --out runs/tables
 
 개별 점수 CSV와 요약 JSON을 생성합니다. 반복을 영상별로 먼저 평균내고 영상을 평균내며, 데이터셋과 GT1/GT2는 구분합니다.
 
+이미지 수·실제 토큰·비용·대응 점수 비교표는 다음 명령으로 만듭니다. 원본 N은 영상 파일 해시로 대응한 메타데이터 프레임 수이며, 전수 디코딩 검증은 아닙니다.
+
+```powershell
+python tools/collect_frame_metadata.py --videos C:\datasets\afterimage --inputs runs/inputs --out runs/frame_counts.csv
+python -m afterimage metrics --inputs runs/inputs --answers runs/answers --scores runs/scores --frame-counts runs/frame_counts.csv --out runs/paper_tables
+```
+
+원본 대비 선택은 `1-M/N`, 선택 대비 합성은 `1-J/M`, 시작·끝 포함 VLM 입력은 `1-(J+2)/(M+2)`로 계산합니다. 전체 합계 비율과 영상별 비율 평균을 구분합니다. 토큰 수는 이미지뿐 아니라 프롬프트와 JSON 구조를 포함한 실측 입력 토큰입니다. 이미지 수 감소율을 토큰 감소율로 대신 표기하지 않습니다. 비교표는 같은 반복의 선택 프레임 및 동일 이미지 수의 균일 프레임과 잔상을 각각 비교합니다.
+
 ## 현재 검증 범위
 
-새 생성 진입점으로 Weizmann run과 UT push를 캐시 없이 생성하여 네 조건의 48회 입력 등장, 27개 PNG가 기존 입력과 일치했습니다. 전체 303편의 캐시 없는 재생성, 새 PC 설치 및 이 패키지를 이용한 실제 API 해석·채점은 아직 완료하지 않았습니다. 기존 CLI·구독앱·API 시험 결과는 본실험 결과와 혼합하지 않습니다.
+새 생성 진입점으로 Weizmann run과 UT push를 캐시 없이 생성하여 네 조건의 48회 입력 등장, 27개 PNG가 기존 입력과 일치했습니다. 이후 Weizmann run·UT push·KISA 주정차 각 1편으로 두 모델·네 조건의 API 해석 32건과 별도 채점 32건을 완료했습니다. 정상 점검 비용은 $0.500936이며 해석 오류도 보존했습니다. 구조화 출력 설정은 JSON 형식을 보장하기 위한 것이며 해석의 정확성을 보장하지 않습니다. 오프라인 테스트 11개와 303편 입력/32개 응답·점수의 표 내보내기를 검증했습니다.
+
+전체 303편의 캐시 없는 재생성, 새 PC 설치 및 전체 3회 API 실험은 아직 완료하지 않았습니다. Claude 순차 실행 예상 비용이 기존 $100을 넘어 실행 방식 결정이 필요합니다. 큰 입력은 추가 전송 검증이 필요하며 OpenAI Files 업로드에서 503 오류가 반복됐습니다. 현재 소규모 점검은 OpenAI 이미지 직접 전송과 Claude Files 전송으로 완료했습니다. 어떤 방식도 이미지 순서·중복·원본 PNG 바이트를 바꾸지 않습니다. 과거 CLI·구독앱·이번 진단 결과를 본실험 결과와 혼합하지 않습니다.
 
 [검증 기록](validation/STATUS.json) · [배포 상태](docs/RELEASE_STATUS.md) · [권리·출처](THIRD_PARTY_NOTICES.md)

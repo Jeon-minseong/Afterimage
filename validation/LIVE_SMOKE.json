@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-26",
+  "scope": "Diagnostic, one repeat; not full benchmark or held-out quality evaluation",
+  "videos": [
+    {
+      "dataset": "weizmann",
+      "video_id": "v7e28bba5b470",
+      "task": [
+        "GT1"
+      ]
+    },
+    {
+      "dataset": "ut_interaction",
+      "video_id": "v81e9cbeaf312",
+      "task": [
+        "GT1"
+      ]
+    },
+    {
+      "dataset": "kisa",
+      "video_id": "vff6c81f49d82",
+      "task": [
+        "GT1",
+        "GT2"
+      ]
+    }
+  ],
+  "models": {
+    "anthropic": {
+      "effort": "medium",
+      "id": "claude-opus-5-5",
+      "max_output_tokens": 4096,
+      "structured_output": true,
+      "thinking": "adaptive",
+      "usd_per_million": {
+        "cache_read": 0.2,
+        "cache_write": 5,
+        "input": 4,
+        "output": 20
+      }
+    },
+    "openai": {
+      "effort": "medium",
+      "id": "gpt-6.1-sol",
+      "image_detail": "high",
+      "max_output_tokens": 4096,
+      "structured_output": true,
+      "usd_per_million": {
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "input": 2,
+        "output": 10
+      }
+    }
+  },
+  "judge": {
+    "provider": "openai",
+    "settings": {
+      "id": "gpt-6.1-sol",
+      "effort": "low",
+      "image_detail": "high",
+      "max_output_tokens": 2048,
+      "usd_per_million": {
+        "input": 2,
+        "output": 10,
+        "cache_write": 2.5,
+        "cache_read": 0.1
+      },
+      "structured_output": true
+    },
+    "rubric": "prompts/judge.txt"
+  },
+  "conditions": [
+    "uniform_observations",
+    "selected_sequence",
+    "afterimage",
+    "uniform_budget"
+  ],
+  "inference_completed": 32,
+  "scoring_completed": 32,
+  "normal_diagnostic_cost_usd": 0.500936,
+  "normal_inference_cost_usd": {
+    "anthropic": 0.294188,
+    "openai": 0.15146400000000002
+  },
+  "normal_scoring_cost_usd": 0.055284,
+  "all_current_diagnostic_and_debug_generations": 69,
+  "all_current_diagnostic_and_debug_cost_usd": {
+    "openai": 0.21267,
+    "anthropic": 0.304708
+  },
+  "full_three_repeats_started": false,
+  "full_three_repeats_requests": 9432,
+  "full_three_repeats_standard_forecast_usd": {
+    "openai_including_common_judging": 73.565814,
+    "anthropic": 106.739964
+  },
+  "forecast_basis": "One sample per dataset/task/condition/provider, measured prompt/schema token counts, image-geometry-scaled net input tokens, observed billable output tokens. GPT input at cache-write rate, no cache savings. Judge mean scaled to 9432. 20% allowance is not a statistical interval or guaranteed cap. Larger videos and reasoning can differ.",
+  "frozen_inputs_validated": {
+    "videos": 303,
+    "unique_png_files": 12734,
+    "ordered_image_appearances": 16608
+  },
+  "metrics_export_checked": {
+    "videos": 303,
+    "answers": 32,
+    "scores": 32,
+    "paired_comparisons": 16,
+    "API_calls": 0
+  },
+  "limitations": [
+    "Weizmann afterimage GPT described running as walking; KISA afterimage Claude described two people against one-person GT. Errors preserved.",
+    "GT model-assisted and not fully human verified; GPT common judge may be biased.",
+    "OpenAI inline worked for samples; file-backed inference worked once, later file uploads repeatedly returned 503.",
+    "Large Claude count chunking offline-tested only; maximum-input live transport not yet verified.",
+    "No Batch implementation or live Batch validation. No new full-video decode audit."
+  ],
+  "plan_sha256": {
+    "interpretation": "35848bc6bee5c06dce3418a8064511ecb3b8dc2cb6af7a7405ffd333347bb1ce",
+    "scoring": "7dea9be0480af7a5a2f191ee44dc3c3d69e488fe8f2ca3a3fbab3af620910e2a"
+  }
+}

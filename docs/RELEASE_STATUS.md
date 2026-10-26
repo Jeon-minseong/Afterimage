@@ -13,4 +13,6 @@ This source release is prepared for https://github.com/Jeon-minseong/Afterimage.
 - The current generation baseline is Windows/CUDA. Cross-platform support and a fresh-machine installation have not been verified. Use the declared environment rather than claiming environment-independent bit identity.
 - No API keys, source videos, model weights, user-specific virtual environment, historical caches or paid responses are in the source archive. The README GIF is a small attributed research illustration; raw dataset videos and full fixed-input bundles are not included.
 
-Before submission: finalize protocol and rubric; confirm dataset/weight access instructions and licensing; test a clean installation; run the intended API smoke test and full experiment; archive exact configs, source/version hashes, manifests, raw API responses, usage, scoring and the paper tables. Keep pilot/app/CLI results separate from confirmatory API results.
+Before submission: finalize protocol and rubric; confirm dataset/weight access instructions and licensing; test a clean installation; complete maximum-input transport checks and the full experiment; archive exact configs, source/version hashes, manifests, raw API responses, usage, scoring and the paper tables. Keep pilot/app/CLI results separate from confirmatory API results.
+
+The 2026-10-26 diagnostic completed 32 API descriptions and 32 scores across three videos. See `validation/LIVE_SMOKE.json` for exact scope, costs, errors and unresolved transport limits. The full three-repeat run has not started.

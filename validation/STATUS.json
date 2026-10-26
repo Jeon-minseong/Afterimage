@@ -1,6 +1,4 @@
 {
-  "API_calls_this_task": 0,
-  "API_spend_this_task_usd": 0,
   "GT1": 303,
   "GT2": 90,
   "cold_verified_new_entry_point": {
@@ -19,13 +17,15 @@
   "links": {
     "cold": "COLD_GENERATION.json",
     "release_constraints": "../docs/RELEASE_STATUS.md",
-    "tests": "OFFLINE_TESTS.json"
+    "tests": "OFFLINE_TESTS.json",
+    "live_diagnostic": "LIVE_SMOKE.json"
   },
-  "live_API_inference_scoring_verified": false,
-  "offline_pipeline_tests_passed": 7,
+  "live_API_inference_scoring_verified": true,
+  "offline_pipeline_tests_passed": 11,
   "protocol_finalized": false,
-  "stage": "source_release_offline_validation",
+  "stage": "three_video_live_diagnostic_full_run_pending",
   "two_model_requests_1_repeat": 3144,
   "two_model_requests_3_repeats": 9432,
-  "repository": "https://github.com/Jeon-minseong/Afterimage"
+  "repository": "https://github.com/Jeon-minseong/Afterimage",
+  "full_three_repeat_API_experiment_completed": false
 }
